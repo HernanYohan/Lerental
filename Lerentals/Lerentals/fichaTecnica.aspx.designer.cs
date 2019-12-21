@@ -202,15 +202,6 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_RedIncendio;
         
         /// <summary>
-        /// Label_SalaEstar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_SalaEstar;
-        
-        /// <summary>
         /// CB_SalaEstar control.
         /// </summary>
         /// <remarks>
@@ -220,13 +211,13 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_SalaEstar;
         
         /// <summary>
-        /// Label_Electrogeno control.
+        /// Label_SalaEstar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Electrogeno;
+        protected global::System.Web.UI.WebControls.Label Label_SalaEstar;
         
         /// <summary>
         /// CB_Electrogeno control.
@@ -238,13 +229,40 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Electrogeno;
         
         /// <summary>
-        /// Label_Hipoteca control.
+        /// Label_Electrogeno control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Hipoteca;
+        protected global::System.Web.UI.WebControls.Label Label_Electrogeno;
+        
+        /// <summary>
+        /// CB_Cine control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CB_Cine;
+        
+        /// <summary>
+        /// CB_Piscina control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CB_Piscina;
+        
+        /// <summary>
+        /// Label_Piscina control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Piscina;
         
         /// <summary>
         /// CB_Hipoteca control.
@@ -256,13 +274,49 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Hipoteca;
         
         /// <summary>
-        /// Label_SalonMiltiuso control.
+        /// Label_Hipoteca control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_SalonMiltiuso;
+        protected global::System.Web.UI.WebControls.Label Label_Hipoteca;
+        
+        /// <summary>
+        /// CB_Sauna control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CB_Sauna;
+        
+        /// <summary>
+        /// Label_Sauna control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Sauna;
+        
+        /// <summary>
+        /// CB_SalonEventos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CB_SalonEventos;
+        
+        /// <summary>
+        /// Label_SalonEventos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_SalonEventos;
         
         /// <summary>
         /// CB_SalonMultiuso control.
@@ -274,13 +328,13 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_SalonMultiuso;
         
         /// <summary>
-        /// Label_Escaleras control.
+        /// Label_SalonMiltiuso control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Escaleras;
+        protected global::System.Web.UI.WebControls.Label Label_SalonMiltiuso;
         
         /// <summary>
         /// CB_Escaleras control.
@@ -292,13 +346,13 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Escaleras;
         
         /// <summary>
-        /// Label_Portenes control.
+        /// Label_Escaleras control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Portenes;
+        protected global::System.Web.UI.WebControls.Label Label_Escaleras;
         
         /// <summary>
         /// CB_Portones control.
@@ -310,13 +364,13 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Portones;
         
         /// <summary>
-        /// Label_Guardia control.
+        /// Label_Portenes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Guardia;
+        protected global::System.Web.UI.WebControls.Label Label_Portenes;
         
         /// <summary>
         /// CB_Guardia control.
@@ -326,6 +380,168 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CB_Guardia;
+        
+        /// <summary>
+        /// Label_Guardia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Guardia;
+        
+        /// <summary>
+        /// CB_Hall control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CB_Hall;
+        
+        /// <summary>
+        /// Label_Hall control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Hall;
+        
+        /// <summary>
+        /// CB_Tenis control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CB_Tenis;
+        
+        /// <summary>
+        /// Tenis control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Tenis;
+        
+        /// <summary>
+        /// CB_Squash control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CB_Squash;
+        
+        /// <summary>
+        /// LabelSquash control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelSquash;
+        
+        /// <summary>
+        /// CB_Gym control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CB_Gym;
+        
+        /// <summary>
+        /// Label_Gym control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Gym;
+        
+        /// <summary>
+        /// CB_Jardines control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CB_Jardines;
+        
+        /// <summary>
+        /// Label_Jardines control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Jardines;
+        
+        /// <summary>
+        /// CB_Ascensor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CB_Ascensor;
+        
+        /// <summary>
+        /// Lable_Ascensor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Lable_Ascensor;
+        
+        /// <summary>
+        /// CB_Bodega control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CB_Bodega;
+        
+        /// <summary>
+        /// Label_Bodega control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Bodega;
+        
+        /// <summary>
+        /// CB_Golf control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CB_Golf;
+        
+        /// <summary>
+        /// Label_Golf control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Golf;
+        
+        /// <summary>
+        /// Btn_Volver control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_Volver;
         
         /// <summary>
         /// divMessage control.

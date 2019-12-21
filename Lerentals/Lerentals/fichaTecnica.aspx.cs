@@ -200,17 +200,17 @@ namespace Lerentals
                     CB_Hipoteca.Checked = false;
                 }
 
-                //        String piscina = registro["Piscina"].ToString();
+                String piscina = registro["Piscina"].ToString();
 
-                //        if (piscina == "Si")
-                //        {
-                //            CB_Piscina.BackColor = Color.Blue;
-                //            CB_Piscina.Checked = true;
-                //        }
-                //        else
-                //        {
-                //            CB_Piscina.Checked = false;
-                //        }
+                if (piscina == "Si")
+                {
+                    CB_Piscina.BackColor = Color.Blue;
+                    CB_Piscina.Checked = true;
+                }
+                else
+                {
+                    CB_Piscina.Checked = false;
+                }
 
                 String caldera = registro["Caldera"].ToString();
 
@@ -224,79 +224,79 @@ namespace Lerentals
                 CB_Caldera.Checked = false;
             }
 
-            //        String cine = registro["Cine"].ToString();
+                String cine = registro["Cine"].ToString();
 
-            //        if (cine == "Si")
-            //        {
-            //            CB_Cine.BackColor = Color.Blue;
-            //            CB_Cine.Checked = true;
-            //        }
-            //        else
-            //        {
-            //            CB_Cine.Checked = false;
-            //        }
+                if (cine == "Si")
+                {
+                    CB_Cine.BackColor = Color.Blue;
+                    CB_Cine.Checked = true;
+                }
+                else
+                {
+                    CB_Cine.Checked = false;
+                }
 
-            //        String sauna = registro["Sauna / Turco"].ToString();
+                String sauna = registro["Sauna / Turco"].ToString();
 
-            //        if (sauna == "Si")
-            //        {
-            //            CB_Sauna.BackColor = Color.Blue;
-            //            CB_Sauna.Checked = true;
-            //        }
-            //        else
-            //        {
-            //            CB_Sauna.Checked = false;
-            //        }
+                if (sauna == "Si")
+                {
+                    CB_Sauna.BackColor = Color.Blue;
+                    CB_Sauna.Checked = true;
+                }
+                else
+                {
+                    CB_Sauna.Checked = false;
+                }
 
-            //        String salonEventos = registro["Salon Eventos"].ToString();
+                String salonEventos = registro["Salon Eventos"].ToString();
 
-            //        if (salonEventos == "Si")
-            //        {
-            //            CB_SalonEventos.BackColor = Color.Blue;
-            //            CB_SalonEventos.Checked = true;
-            //        }
-            //        else
-            //        {
-            //            CB_SalonEventos.Checked = false;
-            //        }
+                if (salonEventos == "Si")
+                {
+                    CB_SalonEventos.BackColor = Color.Blue;
+                    CB_SalonEventos.Checked = true;
+                }
+                else
+                {
+                    CB_SalonEventos.Checked = false;
+                }
 
-            //        String jardines = registro["Jardines"].ToString();
+                String jardines = registro["Jardines"].ToString();
 
-            //        if (jardines == "Si")
-            //        {
-            //            CB_Jardines.BackColor = Color.Blue;
-            //            CB_Jardines.Checked = true;
-            //        }
-            //        else
-            //        {
-            //            CB_Jardines.Checked = false;
-            //        }
+                if (jardines == "Si")
+                {
+                    CB_Jardines.BackColor = Color.Blue;
+                    CB_Jardines.Checked = true;
+                }
+                else
+                {
+                    CB_Jardines.Checked = false;
+                }
 
-            //        String ascensor = registro["Ascensor"].ToString();
+                String ascensor = registro["Ascensor"].ToString();
 
-            //        if (ascensor == "Si")
-            //        {
-            //            CB_Ascensor.BackColor = Color.Blue;
-            //            CB_Ascensor.Checked = true;
-            //        }
-            //        else
-            //        {
-            //            CB_Ascensor.Checked = false;
-            //        }
+                if (ascensor == "Si")
+                {
+                    CB_Ascensor.BackColor = Color.Blue;
+                    CB_Ascensor.Checked = true;
+                }
+                else
+                {
+                    CB_Ascensor.Checked = false;
+                }
 
-            //        String bodega = registro["Bodega"].ToString();
+                String bodega = registro["Bodega"].ToString();
 
-            //        if (bodega == "Si")
-            //        {
-            //            CB_Bodega.BackColor = Color.Blue;
-            //            CB_Bodega.Checked = true;
-            //        }
-            //        else
-            //        {
-            //            CB_Bodega.Checked = false;
-            //        }
+                if (bodega == "Si")
+                {
+                    CB_Bodega.BackColor = Color.Blue;
+                    CB_Bodega.Checked = true;
+                }
+                else
+                {
+                    CB_Bodega.Checked = false;
+                }
 
-            String zona = registro["Zona BBQ"].ToString();
+                String zona = registro["Zona BBQ"].ToString();
 
             if (zona == "Si")
             {
@@ -308,31 +308,31 @@ namespace Lerentals
                 CB_ZonaBBQ.Checked = false;
             }
 
-            //        String golf = registro["Golf"].ToString();
+                String golf = registro["Golf"].ToString();
 
-            //        if (golf == "Si")
-            //        {
-            //            CB_Golf.BackColor = Color.Blue;
-            //            CB_Golf.Checked = true;
-            //        }
-            //        else
-            //        {
-            //            CB_Golf.Checked = false;
-            //        }
+                if (golf == "Si")
+                {
+                    CB_Golf.BackColor = Color.Blue;
+                    CB_Golf.Checked = true;
+                }
+                else
+                {
+                    CB_Golf.Checked = false;
+                }
 
-            //        String hall = registro["Hall"].ToString();
+                String hall = registro["Hall"].ToString();
 
-            //        if (hall == "Si")
-            //        {
-            //            CB_Hall.BackColor = Color.Blue;
-            //            CB_Hall.Checked = true;
-            //        }
-            //        else
-            //        {
-            //            CB_Hall.Checked = false;
-            //        }
+                if (hall == "Si")
+                {
+                    CB_Hall.BackColor = Color.Blue;
+                    CB_Hall.Checked = true;
+                }
+                else
+                {
+                    CB_Hall.Checked = false;
+                }
 
-            String salonJuegos = registro["Salon Juegos"].ToString();
+                String salonJuegos = registro["Salon Juegos"].ToString();
 
             if (salonJuegos == "Si")
             {
@@ -344,31 +344,31 @@ namespace Lerentals
                 CB_SalaJuego.Checked = false;
             }
 
-            //        String tenis = registro["Tenis"].ToString();
+                String tenis = registro["Tenis"].ToString();
 
-            //        if (tenis == "Si")
-            //        {
-            //            CB_Tenis.BackColor = Color.Blue;
-            //            CB_Tenis.Checked = true;
-            //        }
-            //        else
-            //        {
-            //            CB_Tenis.Checked = false;
-            //        }
+                if (tenis == "Si")
+                {
+                    CB_Tenis.BackColor = Color.Blue;
+                    CB_Tenis.Checked = true;
+                }
+                else
+                {
+                    CB_Tenis.Checked = false;
+                }
 
-            //        String squash = registro["Squash"].ToString();
+                String squash = registro["Squash"].ToString();
 
-            //        if (squash == "Si")
-            //        {
-            //            CB_Squash.BackColor = Color.Blue;
-            //            CB_Squash.Checked = true;
-            //        }
-            //        else
-            //        {
-            //            CB_Squash.Checked = false;
-            //        }
+                if (squash == "Si")
+                {
+                    CB_Squash.BackColor = Color.Blue;
+                    CB_Squash.Checked = true;
+                }
+                else
+                {
+                    CB_Squash.Checked = false;
+                }
 
-            String garaje = registro["Garage"].ToString();
+                String garaje = registro["Garage"].ToString();
 
             if (garaje == "Si")
             {
@@ -380,19 +380,19 @@ namespace Lerentals
                 CB_Garaje.Checked = false;
             }
 
-            //        String gym = registro["GYM"].ToString();
+                String gym = registro["GYM"].ToString();
 
-            //        if (gym == "Si")
-            //        {
-            //            CB_Gym.BackColor = Color.Blue;
-            //            CB_Gym.Checked = true;
-            //        }
-            //        else
-            //        {
-            //            CB_Gym.Checked = false;
-            //        }
+                if (gym == "Si")
+                {
+                    CB_Gym.BackColor = Color.Blue;
+                    CB_Gym.Checked = true;
+                }
+                else
+                {
+                    CB_Gym.Checked = false;
+                }
 
-               }
+            }
 
 
 
@@ -416,5 +416,9 @@ namespace Lerentals
 
         }
 
+        protected void Btn_Volver_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("Defaul.aspx");
+        }
     }
 }

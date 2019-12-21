@@ -134,6 +134,8 @@
                     &nbsp;</td>
                 <td class="auto-style5">
                     &nbsp;</td>
+                <td class="auto-style5">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style16">
@@ -145,6 +147,8 @@
                 <td class="auto-style15" colspan="4">
                     &nbsp;</td>
                 <td class="auto-style15" colspan="3">
+                    &nbsp;</td>
+                <td class="auto-style15">
                     &nbsp;</td>
                 <td class="auto-style15">
                     &nbsp;</td>
@@ -175,6 +179,8 @@
                     &nbsp;</td>
                 <td class="auto-style7">
                     &nbsp;</td>
+                <td class="auto-style7">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style7">
@@ -188,6 +194,8 @@
                 <td class="auto-style7" colspan="3">
                     &nbsp;</td>
                 <td class="auto-style7" colspan="3">
+                    &nbsp;</td>
+                <td class="auto-style7">
                     &nbsp;</td>
                 <td class="auto-style7">
                     &nbsp;</td>
@@ -220,6 +228,8 @@
                     &nbsp;</td>
                 <td class="auto-style7">
                     &nbsp;</td>
+                <td class="auto-style7">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style7">
@@ -230,17 +240,20 @@
                     &nbsp;</td>
                 <td class="auto-style7">
                     &nbsp;</td>
+                <td class="auto-style7">
+                    &nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5" rowspan="5">
+                <td class="auto-style5" rowspan="12">
                     &nbsp;</td>
-                <td class="auto-style18" colspan="3" rowspan="5">
+                <td class="auto-style18" colspan="3" rowspan="12">
                     <div id="divImageSlider" runat="server" class="flexslider">
                     </div>
                 </td>
                 <td colspan="9">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style5">Caracteristicas</span> </td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style5">Caracteristicas</span> </td>
+                <td>
+                    &nbsp;</td>
                 <td>
                     &nbsp;</td>
                 <td>
@@ -252,85 +265,317 @@
                     &nbsp;</td>
                 <td class="auto-style11">
                     &nbsp;</td>
+                <td class="auto-style11">
+                    &nbsp;</td>
                 <tr>
-                <td>
-                    <i class="fa fa-car fa-2x" aria-hidden="true" style="width: 6px; margin-left: 7px"></i></td>
                 <td>
                     <asp:CheckBox ID="CB_Garaje" runat="server" Enabled="False" />
                     </td>
                 <td>
-                    <i class="fa fa-gamepad fa-2x" aria-hidden="true" style="width: 1px; height: 19px; margin-left: 4px"></i></td>
+                    <i class="fa fa-car " aria-hidden="true" style="width: 6px; margin-left: 7px"></i>
+                    </td>
                 <td>
                     <asp:CheckBox ID="CB_SalaJuego" runat="server" Enabled="False" />
                     </td>
                 <td>
-                     <i class="fa fa-fire fa-2x" aria-hidden="true" style="width: 6px; margin-left: 5px; margin-right: 0px"></i></td>
-                <td colspan="2">
-                    <asp:CheckBox ID="CB_Caldera" runat="server" Enabled="False" />
+                    <i class="fa fa-gamepad " aria-hidden="true" style="width: 1px; height: 19px; margin-left: 4px"></i>
                     </td>
                 <td>
-                    <i class="fa fa-cutlery fa-2x" aria-hidden="true" style="width: 6px; margin-left: 8px"></i>
+                    <asp:CheckBox ID="CB_Caldera" runat="server" Enabled="False" />
+                    </td>
+                <td colspan="2">
+                     <i class="fa fa-fire " aria-hidden="true" style="width: 6px; margin-left: 5px; margin-right: 0px"></i>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_ZonaBBQ" runat="server" Enabled="False" />
                     </td>
                 <td>
+                    <i class="fa fa-cutlery " aria-hidden="true" style="width: 6px; margin-left: 8px"></i>
+                    </td>
+                <td>
+                    &nbsp;</td>
+                <td>
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
                 <tr>
                 <td>
-                    <i class="fa fa-fire-extinguisher fa-2x" aria-hidden="true" style="margin-left: 12px"></i></td>
-                <td>
                     <asp:CheckBox ID="CB_RedIncendio" runat="server" Enabled="False" />
                     </td>
                 <td>
-                    <asp:Label ID="Label_SalaEstar" runat="server" Text="Sala Estar :"></asp:Label>
+                    <i class="fa fa-fire-extinguisher " aria-hidden="true" style="margin-left: 12px"></i>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_SalaEstar" runat="server" Enabled="False" />
                     </td>
                 <td>
-                    <asp:Label ID="Label_Electrogeno" runat="server" Text="Electrogeno :"></asp:Label>
+                    <asp:Label ID="Label_SalaEstar" runat="server" Text="Sala Estar"></asp:Label>
                     </td>
-                <td colspan="2">
+                <td>
                     <asp:CheckBox ID="CB_Electrogeno" runat="server" Enabled="False" />
                     </td>
-                <td>
-                    <asp:Label ID="Label_Hipoteca" runat="server" Text="Hipoteca :"></asp:Label>
+                <td colspan="2">
+                    <asp:Label ID="Label_Electrogeno" runat="server" Text="Electrogeno"></asp:Label>
                     </td>
                 <td>
-                    <asp:CheckBox ID="CB_Hipoteca" runat="server" Enabled="False" />
+                    <asp:CheckBox ID="CB_Cine" runat="server" Enabled="False" />
                     </td>
+                <td>
+                    <i class="fa fa-video-camera " aria-hidden="true" style="margin-left: 12px"></i>
+                    </td>
+                <td>
+                    &nbsp;</td>
                 <td>
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
                 <tr>
                 <td>
-                    <asp:Label ID="Label_SalonMiltiuso" runat="server" Text="Salon Miltiuso :"></asp:Label>
+                    <asp:CheckBox ID="CB_Piscina" runat="server" Enabled="False" />
                     </td>
+                <td>
+                    <asp:Label ID="Label_Piscina" runat="server" Text="Piscina"></asp:Label>
+                    </td>
+                <td>
+                    <asp:CheckBox ID="CB_Hipoteca" runat="server" Enabled="False" />
+                    </td>
+                <td>
+                    <asp:Label ID="Label_Hipoteca" runat="server" Text="Hipoteca"></asp:Label>
+                    </td>
+                <td>
+                    <asp:CheckBox ID="CB_Sauna" runat="server" Enabled="False" />
+                    </td>
+                <td colspan="2">
+                    <asp:Label ID="Label_Sauna" runat="server" Text="Sauna"></asp:Label>
+                    </td>
+                <td>
+                    <asp:CheckBox ID="CB_SalonEventos" runat="server" Enabled="False" />
+                    </td>
+                <td>
+                    <asp:Label ID="Label_SalonEventos" runat="server" Text="Salon Eventos"></asp:Label>
+                    </td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <tr>
                 <td>
                     <asp:CheckBox ID="CB_SalonMultiuso" runat="server" Enabled="False" />
                     </td>
                 <td>
-                    <asp:Label ID="Label_Escaleras" runat="server" Text="Escaleras :"></asp:Label>
+                    <asp:Label ID="Label_SalonMiltiuso" runat="server" Text="Salon Miltiuso"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Escaleras" runat="server" Enabled="False" />
                     </td>
                 <td>
-                    <asp:Label ID="Label_Portenes" runat="server" Text="Portenes :"></asp:Label>
-                    </td>
-                <td colspan="2">
-                    <asp:CheckBox ID="CB_Portones" runat="server" Enabled="False" />
+                    <asp:Label ID="Label_Escaleras" runat="server" Text="Escaleras"></asp:Label>
                     </td>
                 <td>
-                    <asp:Label ID="Label_Guardia" runat="server" Text="Guardia :"></asp:Label>
+                    <asp:CheckBox ID="CB_Portones" runat="server" Enabled="False" />
+                    </td>
+                <td colspan="2">
+                    <asp:Label ID="Label_Portenes" runat="server" Text="Portenes :"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Guardia" runat="server" Enabled="False" />
                     </td>
+                <td>
+                    <asp:Label ID="Label_Guardia" runat="server" Text="Guardia"></asp:Label>
+                    </td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <tr>
+                <td>
+                    <asp:CheckBox ID="CB_Hall" runat="server" Enabled="False" />
+                    </td>
+                <td>
+                    <asp:Label ID="Label_Hall" runat="server" Text="Hall"></asp:Label>
+                    </td>
+                <td>
+                    <asp:CheckBox ID="CB_Tenis" runat="server" Enabled="False" />
+                    </td>
+                <td>
+                    <asp:Label ID="Tenis" runat="server" Text="Tenis"></asp:Label>
+                    </td>
+                <td>
+                    <asp:CheckBox ID="CB_Squash" runat="server" Enabled="False" />
+                    </td>
+                <td colspan="2">
+                    <asp:Label ID="LabelSquash" runat="server" Text="Squash"></asp:Label>
+                    </td>
+                <td>
+                    <asp:CheckBox ID="CB_Gym" runat="server" Enabled="False" />
+                    </td>
+                <td>
+                    <asp:Label ID="Label_Gym" runat="server" Text="CB_Gym"></asp:Label>
+                    </td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                    <tr>
+                <td>
+                    <asp:CheckBox ID="CB_Jardines" runat="server" Enabled="False" />
+                        </td>
+                <td>
+                    <asp:Label ID="Label_Jardines" runat="server" Text="Jardines"></asp:Label>
+                        </td>
+                <td>
+                    <asp:CheckBox ID="CB_Ascensor" runat="server" Enabled="False" />
+                        </td>
+                <td>
+                    <asp:Label ID="Lable_Ascensor" runat="server" Text="Ascensor"></asp:Label>
+                        </td>
+                <td>
+                    <asp:CheckBox ID="CB_Bodega" runat="server" Enabled="False" />
+                        </td>
+                <td colspan="2">
+                    <asp:Label ID="Label_Bodega" runat="server" Text="Bodega"></asp:Label>
+                        </td>
+                <td>
+                    <asp:CheckBox ID="CB_Golf" runat="server" Enabled="False" />
+                        </td>
+                <td>
+                    <asp:Label ID="Label_Golf" runat="server" Text="Golf"></asp:Label>
+                        </td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                    <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td colspan="2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td colspan="2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                    <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td colspan="2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td colspan="2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                    <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td colspan="2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td colspan="2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
+
+                    <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td colspan="2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td colspan="2">
+                    &nbsp;</td>
+                <td>
+                    <asp:Button ID="Btn_Volver" class="btn btn-full" runat="server" OnClick="Btn_Volver_Click1" Text="Volver" Height="57px" Width="183px" />
+                        </td>
+                <td>
+                    &nbsp;</td>
+                                
+
+                <td>
+                    &nbsp;</td>
                                 
 
                 <td>
