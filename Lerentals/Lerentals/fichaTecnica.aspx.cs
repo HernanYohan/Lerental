@@ -104,101 +104,101 @@ namespace Lerentals
                 //        // L_salonMultiuso.Text = registro["Salon multiuso"].ToString();
                 //        // L_antiguedad.Text = registro["ANTIGUEDAD"].ToString();
 
-                //        String salonMultiuso = registro["Salon multiuso"].ToString();
+                String salonMultiuso = registro["Salon multiuso"].ToString();
 
-                //        if (salonMultiuso == "Si")
-                //        {
-                //            CB_SalonMultiuso.BackColor = Color.Blue;
-                //            CB_SalonMultiuso.Checked = true;
-                //        }
-                //        else
-                //        {
-                //            CB_SalonMultiuso.Checked = false;
-                //        }
+                if (salonMultiuso == "Si")
+                {
+                    CB_SalonMultiuso.BackColor = Color.Blue;
+                    CB_SalonMultiuso.Checked = true;
+                }
+                else
+                {
+                    CB_SalonMultiuso.Checked = false;
+                }
 
-                //        String escaleras = registro["Escaleras Electricas"].ToString();
+                String escaleras = registro["Escaleras Electricas"].ToString();
 
-                //        if (escaleras == "Si")
-                //        {
-                //            CB_Escaleras.BackColor = Color.Blue;
-                //            CB_Escaleras.Checked = true;
-                //        }
-                //        else
-                //        {
-                //            CB_Escaleras.Checked = false;
-                //        }
+                if (escaleras == "Si")
+                {
+                    CB_Escaleras.BackColor = Color.Blue;
+                    CB_Escaleras.Checked = true;
+                }
+                else
+                {
+                    CB_Escaleras.Checked = false;
+                }
 
-                //        String redIncendios = registro["Red Incendios"].ToString();
+                String redIncendios = registro["Red Incendios"].ToString();
 
-                //        if (redIncendios == "Si")
-                //        {
-                //            CB_RedIncendio.BackColor = Color.Blue;
-                //            CB_RedIncendio.Checked = true;
-                //        }
-                //        else
-                //        {
-                //            CB_RedIncendio.Checked = false;
-                //        }
+                if (redIncendios == "Si")
+                {
+                    CB_RedIncendio.BackColor = Color.Blue;
+                    CB_RedIncendio.Checked = true;
+                }
+                else
+                {
+                    CB_RedIncendio.Checked = false;
+                }
 
-                //        String guardia = registro["Guardia"].ToString();
+                String guardia = registro["Guardia"].ToString();
 
-                //        if (guardia == "Si")
-                //        {
-                //            CB_Guardia.BackColor = Color.Blue;
-                //            CB_Guardia.Checked = true;
-                //        }
-                //        else
-                //        {
-                //            CB_Guardia.Checked = false;
-                //        }
+                if (guardia == "Si")
+                {
+                    CB_Guardia.BackColor = Color.Blue;
+                    CB_Guardia.Checked = true;
+                }
+                else
+                {
+                    CB_Guardia.Checked = false;
+                }
 
-                //        String portones = registro["Portones"].ToString();
+                String portones = registro["Portones"].ToString();
 
-                //        if (portones == "Si")
-                //        {
-                //            CB_Portones.BackColor = Color.Blue;
-                //            CB_Portones.Checked = true;
-                //        }
-                //        else
-                //        {
-                //            CB_Portones.Checked = false;
-                //        }
+                if (portones == "Si")
+                {
+                    CB_Portones.BackColor = Color.Blue;
+                    CB_Portones.Checked = true;
+                }
+                else
+                {
+                    CB_Portones.Checked = false;
+                }
 
-                //        String salaEstar = registro["Sala Estar"].ToString();
+                String salaEstar = registro["Sala Estar"].ToString();
 
-                //        if (salaEstar == "Si")
-                //        {
-                //            CB_SalaEstar.BackColor = Color.Blue;
-                //            CB_SalaEstar.Checked = true;
-                //        }
-                //        else
-                //        {
-                //            CB_SalaEstar.Checked = false;
-                //        }
+                if (salaEstar == "Si")
+                {
+                    CB_SalaEstar.BackColor = Color.Blue;
+                    CB_SalaEstar.Checked = true;
+                }
+                else
+                {
+                    CB_SalaEstar.Checked = false;
+                }
 
-                //        String electrogeno = registro["Electrogeno"].ToString();
+                String electrogeno = registro["Electrogeno"].ToString();
 
-                //        if (electrogeno == "Si")
-                //        {
-                //            CB_Electrogeno.BackColor = Color.Blue;
-                //            CB_Electrogeno.Checked = true;
-                //        }
-                //        else
-                //        {
-                //            CB_Electrogeno.Checked = false;
-                //        }
+                if (electrogeno == "Si")
+                {
+                    CB_Electrogeno.BackColor = Color.Blue;
+                    CB_Electrogeno.Checked = true;
+                }
+                else
+                {
+                    CB_Electrogeno.Checked = false;
+                }
 
-                //        String hipoteca = registro["Hipoteca"].ToString();
+                String hipoteca = registro["Hipoteca"].ToString();
 
-                //        if (hipoteca == "Si")
-                //        {
-                //            CB_Hipoteca.BackColor = Color.Blue;
-                //            CB_Hipoteca.Checked = true;
-                //        }
-                //        else
-                //        {
-                //            CB_Hipoteca.Checked = false;
-                //        }
+                if (hipoteca == "Si")
+                {
+                    CB_Hipoteca.BackColor = Color.Blue;
+                    CB_Hipoteca.Checked = true;
+                }
+                else
+                {
+                    CB_Hipoteca.Checked = false;
+                }
 
                 //        String piscina = registro["Piscina"].ToString();
 

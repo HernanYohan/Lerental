@@ -31,3 +31,36 @@ c:\users\hernan\documents\visual studio 2015\Projects\Lerentals\Lerentals\bin\Mi
 c:\users\hernan\documents\visual studio 2015\Projects\Lerentals\Lerentals\obj\Debug\Lerentals.csprojResolveAssemblyReference.cache
 c:\users\hernan\documents\visual studio 2015\Projects\Lerentals\Lerentals\obj\Debug\Lerentals.dll
 c:\users\hernan\documents\visual studio 2015\Projects\Lerentals\Lerentals\obj\Debug\Lerentals.pdb
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\ApplicationInsights.config
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\roslyn\csc.exe
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\roslyn\vbc.exe
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\roslyn\VBCSCompiler.exe
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Lerentals.dll.config
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Lerentals.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Lerentals.pdb
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.AI.Web.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.AI.Web.xml
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\obj\Debug\Lerentals.csprojResolveAssemblyReference.cache
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\obj\Debug\Lerentals.dll
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\obj\Debug\Lerentals.pdb

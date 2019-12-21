@@ -90,31 +90,10 @@
             color: #3366CC;
             font-size: xx-large;
         }
-        .auto-style6 {
-            width: 681px;
-        }
         .auto-style7 {
             color: #000000;
         }
-        .auto-style8 {
-            width: 568px;
-        }
-        .auto-style9 {
-            width: 681px;
-            height: 26px;
-        }
-        .auto-style10 {
-            width: 270px;
-        }
         .auto-style11 {
-            height: 26px;
-        }
-        .auto-style12 {
-            width: 568px;
-            height: 26px;
-        }
-        .auto-style13 {
-            width: 270px;
             height: 26px;
         }
         .auto-style14 {
@@ -133,12 +112,12 @@
         .auto-style17 {
             color: #3366CC;
             height: 20px;
-            width: 247px;
+            width: 30px;
         }
         .auto-style18 {
             color: #3366CC;
             font-size: xx-large;
-            width: 247px;
+            width: 30px;
         }
     </style>
 </head>
@@ -149,21 +128,29 @@
             <tr>
                 <td class="auto-style5">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-                <td class="auto-style5" colspan="15">
+                <td class="auto-style5" colspan="12">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ficha tecnica del inmueble&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                <td class="auto-style5">
+                    &nbsp;</td>
+                <td class="auto-style5">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style16">
                     </td>
                 <td class="auto-style17" colspan="3">
                     &nbsp;</td>
-                <td class="auto-style15" colspan="3">
+                <td class="auto-style15">
+                    &nbsp;</td>
+                <td class="auto-style15" colspan="4">
                     &nbsp;</td>
                 <td class="auto-style15" colspan="3">
                     &nbsp;</td>
-                <td class="auto-style15" colspan="3">
+                <td class="auto-style15">
                     &nbsp;</td>
-                <td class="auto-style15" colspan="3">
+                <td class="auto-style15">
+                    &nbsp;</td>
+                <td class="auto-style15">
                     &nbsp;</td>
             </tr>
             <tr>
@@ -175,15 +162,37 @@
                 <td class="auto-style7">
                     <i class="fa fa-address-book fa-2x" aria-hidden="true" style="margin-left: 2px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="L_DireccionDes" runat="server"></asp:Label>
                 </td>
-                <td class="auto-style14" colspan="5">
+                <td class="auto-style14" colspan="4">
                     <i class="fa fa-address-book-o fa-2x" aria-hidden="true" style="margin-left: 5px; width: 1px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="L_Direccion" runat="server"></asp:Label>
                 </td>
-                <td class="auto-style7" colspan="4">
+                <td class="auto-style7" colspan="3">
                     <i class="fa fa-home fa-2x" aria-hidden="true" style="margin-left: 3px; width: 0px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="L_refInm" runat="server"></asp:Label>
                 </td>
-                <td class="auto-style7" colspan="4">
+                <td class="auto-style7" colspan="3">
                     <i class="fa fa-id-badge fa-2x" aria-hidden="true" style="width: 5px; margin-left: 4px; margin-right: 0px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="L_CodInmueble" runat="server"></asp:Label>
                 </td>
+                <td class="auto-style7">
+                    &nbsp;</td>
+                <td class="auto-style7">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style7">
+                    &nbsp;</td>
+                <td class="auto-style7">
+                    &nbsp;</td>
+                <td class="auto-style7">
+                    &nbsp;</td>
+                <td class="auto-style14" colspan="4">
+                    &nbsp;</td>
+                <td class="auto-style7" colspan="3">
+                    &nbsp;</td>
+                <td class="auto-style7" colspan="3">
+                    &nbsp;</td>
+                <td class="auto-style7">
+                    &nbsp;</td>
+                <td class="auto-style7">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style7">
@@ -196,123 +205,141 @@
                     <asp:Label ID="Label_Moneda" runat="server" Text="Moneda :"></asp:Label>
                     <asp:Label ID="L_moneda" runat="server"></asp:Label>
                 </td>
-                <td class="auto-style14" colspan="5">
+                <td class="auto-style14" colspan="4">
                     <asp:Label ID="Label_Mts2" runat="server" Text="Mts2 :"></asp:Label>
                     <asp:Label ID="L_Mts2" runat="server"></asp:Label>
                 </td>
-                <td class="auto-style7" colspan="4">
+                <td class="auto-style7" colspan="3">
                     <asp:Label ID="Label_Habitaciones" runat="server" Text="Habitaciones :"></asp:Label>
                     <asp:Label ID="L_habitaciones" runat="server"></asp:Label>
                 </td>
-                <td class="auto-style7" colspan="4">
+                <td class="auto-style7" colspan="3">
                     &nbsp;<i class="fa fa-bath fa-2x" aria-hidden="true" style="width: 0px; margin-left: 2px; margin-right: 0px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="L_baños" runat="server"></asp:Label>
                 </td>
+                <td class="auto-style7">
+                    &nbsp;</td>
+                <td class="auto-style7">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style7">
                     &nbsp;</td>
-                <td class="auto-style7" colspan="15">
+                <td class="auto-style7" colspan="12">
+                    &nbsp;</td>
+                <td class="auto-style7">
+                    &nbsp;</td>
+                <td class="auto-style7">
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5" rowspan="11">
+                <td class="auto-style5" rowspan="5">
                     &nbsp;</td>
-                <td class="auto-style18" colspan="3" rowspan="11">
+                <td class="auto-style18" colspan="3" rowspan="5">
                     <div id="divImageSlider" runat="server" class="flexslider">
                     </div>
                 </td>
-                <td class="auto-style6">
+                <td colspan="9">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style5">Caracteristicas</span> </td>
+                <td>
                     &nbsp;</td>
-                <td colspan="11" class="auto-style6">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-                <tr>
-                <td class="auto-style6">
+                <td>
                     &nbsp;</td>
-                <td colspan="11" class="auto-style6">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Caracteristicas </td>
                 <tr>
-                <td class="auto-style12">
-                    </td>
-                <td class="auto-style12">
-                    </td>
-                <td class="auto-style9">
-                    </td>
-                <td colspan="2" class="auto-style9">
-                    </td>
-                <td class="auto-style13">
-                    </td>
-                <td class="auto-style9">
-                    </td>
-                <td colspan="2" class="auto-style9">
-                    </td>
-                <td class="auto-style9">
-                    </td>
-                <td class="auto-style9">
-                    </td>
-                <td class="auto-style9">
-                    </td>
-                <tr>
-                <td class="auto-style8">
+                <td class="auto-style11" colspan="9">
                     &nbsp;</td>
-                <td class="auto-style8">
+                <td class="auto-style11">
+                    &nbsp;</td>
+                <td class="auto-style11">
+                    &nbsp;</td>
+                <tr>
+                <td>
+                    <i class="fa fa-car fa-2x" aria-hidden="true" style="width: 6px; margin-left: 7px"></i></td>
+                <td>
                     <asp:CheckBox ID="CB_Garaje" runat="server" Enabled="False" />
                     </td>
-                <td class="auto-style6">
-                    <i class="fa fa-car fa-2x" aria-hidden="true" style="width: 6px; margin-left: 7px"></i></td>
-                <td colspan="2" class="auto-style6">
+                <td>
+                    <i class="fa fa-gamepad fa-2x" aria-hidden="true" style="width: 1px; height: 19px; margin-left: 4px"></i></td>
+                <td>
                     <asp:CheckBox ID="CB_SalaJuego" runat="server" Enabled="False" />
                     </td>
-                <td class="auto-style10">
-                    <i class="fa fa-gamepad fa-2x" aria-hidden="true" style="width: 1px; height: 19px; margin-left: 4px"></i></td>
-                <td class="auto-style6">
+                <td>
+                     <i class="fa fa-fire fa-2x" aria-hidden="true" style="width: 6px; margin-left: 5px; margin-right: 0px"></i></td>
+                <td colspan="2">
                     <asp:CheckBox ID="CB_Caldera" runat="server" Enabled="False" />
                     </td>
-                <td colspan="2" class="auto-style6">
-                     <i class="fa fa-fire fa-2x" aria-hidden="true" style="width: 6px; margin-left: 5px; margin-right: 0px"></i></td>
-                <td class="auto-style6">
-                    <asp:CheckBox ID="CB_ZonaBBQ" runat="server" Enabled="False" />
-                    </td>
-                <td class="auto-style6">
+                <td>
                     <i class="fa fa-cutlery fa-2x" aria-hidden="true" style="width: 6px; margin-left: 8px"></i>
                     </td>
-                <tr>
-                <td class="auto-style9">
-                    &nbsp;</td>
-                <td colspan="11" class="auto-style11">
+                <td>
+                    <asp:CheckBox ID="CB_ZonaBBQ" runat="server" Enabled="False" />
                     </td>
-                <tr>
-                <td class="auto-style6">
+                <td>
                     &nbsp;</td>
-                <td colspan="11" class="auto-style6">
-                    &nbsp;</td>
-                <tr>
-                <td class="auto-style6">
-                    &nbsp;</td>
-                <td colspan="11" class="auto-style6">
+                <td>
                     &nbsp;</td>
                 <tr>
-                <td class="auto-style6">
+                <td>
+                    <i class="fa fa-fire-extinguisher fa-2x" aria-hidden="true" style="margin-left: 12px"></i></td>
+                <td>
+                    <asp:CheckBox ID="CB_RedIncendio" runat="server" Enabled="False" />
+                    </td>
+                <td>
+                    <asp:Label ID="Label_SalaEstar" runat="server" Text="Sala Estar :"></asp:Label>
+                    </td>
+                <td>
+                    <asp:CheckBox ID="CB_SalaEstar" runat="server" Enabled="False" />
+                    </td>
+                <td>
+                    <asp:Label ID="Label_Electrogeno" runat="server" Text="Electrogeno :"></asp:Label>
+                    </td>
+                <td colspan="2">
+                    <asp:CheckBox ID="CB_Electrogeno" runat="server" Enabled="False" />
+                    </td>
+                <td>
+                    <asp:Label ID="Label_Hipoteca" runat="server" Text="Hipoteca :"></asp:Label>
+                    </td>
+                <td>
+                    <asp:CheckBox ID="CB_Hipoteca" runat="server" Enabled="False" />
+                    </td>
+                <td>
                     &nbsp;</td>
-                <td colspan="11" class="auto-style6">
+                <td>
                     &nbsp;</td>
                 <tr>
-                <td class="auto-style6">
-                    &nbsp;</td>
-                <td colspan="11" class="auto-style6">
-                    &nbsp;</td>
-                <tr>
-                <td class="auto-style6">
-                    &nbsp;</td>
-                <td colspan="11" class="auto-style6">
-                    &nbsp;</td>
-                <tr>
-                <td class="auto-style6">
-                    &nbsp;</td>
-                
+                <td>
+                    <asp:Label ID="Label_SalonMiltiuso" runat="server" Text="Salon Miltiuso :"></asp:Label>
+                    </td>
+                <td>
+                    <asp:CheckBox ID="CB_SalonMultiuso" runat="server" Enabled="False" />
+                    </td>
+                <td>
+                    <asp:Label ID="Label_Escaleras" runat="server" Text="Escaleras :"></asp:Label>
+                    </td>
+                <td>
+                    <asp:CheckBox ID="CB_Escaleras" runat="server" Enabled="False" />
+                    </td>
+                <td>
+                    <asp:Label ID="Label_Portenes" runat="server" Text="Portenes :"></asp:Label>
+                    </td>
+                <td colspan="2">
+                    <asp:CheckBox ID="CB_Portones" runat="server" Enabled="False" />
+                    </td>
+                <td>
+                    <asp:Label ID="Label_Guardia" runat="server" Text="Guardia :"></asp:Label>
+                    </td>
+                <td>
+                    <asp:CheckBox ID="CB_Guardia" runat="server" Enabled="False" />
+                    </td>
+                                
 
-                <td colspan="11" class="auto-style6">
+                <td>
                     &nbsp;</td>
-                
+                                
+
+                <td>
+                    &nbsp;</td>
+                                
 
                     <table class="w-100">
     </div>
