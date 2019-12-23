@@ -364,13 +364,13 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Portones;
         
         /// <summary>
-        /// Label_Portenes control.
+        /// Label_Portones control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Portenes;
+        protected global::System.Web.UI.WebControls.Label Label_Portones;
         
         /// <summary>
         /// CB_Guardia control.

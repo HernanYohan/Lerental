@@ -43,5 +43,10 @@ namespace Lerentals
 
             }
         }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("registro.aspx");
+        }
     }
 }

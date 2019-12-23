@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="fichaTecnica.aspx" />
+    <Content Include="img\Registrarse.jpg" />
     <Content Include="index.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -120,6 +121,7 @@
     <Content Include="css\images\bg_direction_nav.png" />
     <Content Include="css\scss-files.txt" />
     <Content Include="css\style.css" />
+    <Content Include="registro.aspx" />
     <Content Include="sliderLerental.aspx" />
     <Content Include="img\cover.jpg" />
     <Content Include="img\gadgets.png" />
@@ -206,6 +208,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registro.aspx.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registro.aspx.designer.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
     </Compile>
     <Compile Include="sliderLerental.aspx.cs">
       <DependentUpon>sliderLerental.aspx</DependentUpon>

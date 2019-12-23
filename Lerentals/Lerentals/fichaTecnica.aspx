@@ -369,7 +369,7 @@
                     <asp:CheckBox ID="CB_Portones" runat="server" Enabled="False" />
                     </td>
                 <td colspan="2">
-                    <asp:Label ID="Label_Portenes" runat="server" Text="Portenes :"></asp:Label>
+                    <asp:Label ID="Label_Portones" runat="server" Text="Portones :"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Guardia" runat="server" Enabled="False" />
