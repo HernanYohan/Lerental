@@ -68,7 +68,7 @@ namespace Lerentals
             //Label12.Text = filas;
             //string valor = GridView1.Rows[0].Cells[5].Text;
             Session["ruta"] = filas;
-            Response.Redirect("sliderLerental.aspx");
+            Response.Redirect("fichaTecnica.aspx");
           
         }
 

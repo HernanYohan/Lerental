@@ -23,13 +23,13 @@
 *********************************/ 
 .flexslider {margin: 0; padding: 0;}
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {width: 400px; display: block; height: 400px;}
+.flexslider .slides img {width: 400px; display: block; height: 250px;}
 .flex-pauseplay span {text-transform: capitalize;}
 
 /* Clearfix for the .slides element */
 .slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
 html[xmlns] .slides {display: block;} 
-* html .slides {height: 400px;}
+* html .slides {height: 250px;}
 
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
@@ -56,8 +56,8 @@ html[xmlns] .slides {display: block;}
           zoom: 1;
     top: -11px;
     left: 4px;
-    width: 346px;
-    height: 17px;
+    width: 386px;
+    height: 12px;
 }
 .flex-viewport {max-height: 600px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .loading .flex-viewport {max-height: 300px;}

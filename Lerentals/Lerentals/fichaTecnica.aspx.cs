@@ -20,8 +20,8 @@ namespace Lerentals
 
         private void LoadImage()
         {
-            this.proyecto_cuidad.Text = "Bogota DC.";//Session["proyecto_cuidad"].ToString();
-            String imagenes = "10"; //  Session["ruta"].ToString();
+            this.proyecto_cuidad.Text = "Bogota DC";//Session["proyecto_cuidad"].ToString();
+            String imagenes = "13";// Session["ruta"].ToString();
             try
             {
 
@@ -418,7 +418,7 @@ namespace Lerentals
 
         protected void Btn_Volver_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("Defaul.aspx");
+            Response.Redirect("Default.aspx");
         }
     }
 }

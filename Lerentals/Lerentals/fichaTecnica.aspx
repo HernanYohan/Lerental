@@ -100,20 +100,6 @@
             color: #000000;
             width: 64px;
         }
-        .auto-style15 {
-            color: #3366CC;
-            height: 20px;
-        }
-        .auto-style16 {
-            color: #3366CC;
-            font-size: xx-large;
-            height: 20px;
-        }
-        .auto-style17 {
-            color: #3366CC;
-            height: 20px;
-            width: 30px;
-        }
         .auto-style18 {
             color: #3366CC;
             font-size: xx-large;
@@ -128,8 +114,8 @@
             <tr>
                 <td class="auto-style5">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-                <td class="auto-style5" colspan="12">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ficha tecnica del inmueble&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                <td class="auto-style5" colspan="15" style="font-family: 'Arial Black'">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ficha tecnica del inmueble&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                 <td class="auto-style5">
                     &nbsp;</td>
                 <td class="auto-style5">
@@ -138,23 +124,23 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style16">
-                    </td>
-                <td class="auto-style17" colspan="3">
+                <td class="auto-style7">
                     &nbsp;</td>
-                <td class="auto-style15">
+                <td class="auto-style7">
                     &nbsp;</td>
-                <td class="auto-style15" colspan="4">
+                <td class="auto-style7">
                     &nbsp;</td>
-                <td class="auto-style15" colspan="3">
+                <td class="auto-style14" colspan="7">
                     &nbsp;</td>
-                <td class="auto-style15">
+                <td class="auto-style7" colspan="3">
                     &nbsp;</td>
-                <td class="auto-style15">
+                <td class="auto-style7" colspan="3">
                     &nbsp;</td>
-                <td class="auto-style15">
+                <td class="auto-style7">
                     &nbsp;</td>
-                <td class="auto-style15">
+                <td class="auto-style7">
+                    &nbsp;</td>
+                <td class="auto-style7">
                     &nbsp;</td>
             </tr>
             <tr>
@@ -166,7 +152,7 @@
                 <td class="auto-style7">
                     <i class="fa fa-address-book fa-2x" aria-hidden="true" style="margin-left: 2px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="L_DireccionDes" runat="server"></asp:Label>
                 </td>
-                <td class="auto-style14" colspan="4">
+                <td class="auto-style14" colspan="7">
                     <i class="fa fa-address-book-o fa-2x" aria-hidden="true" style="margin-left: 5px; width: 1px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="L_Direccion" runat="server"></asp:Label>
                 </td>
                 <td class="auto-style7" colspan="3">
@@ -189,7 +175,7 @@
                     &nbsp;</td>
                 <td class="auto-style7">
                     &nbsp;</td>
-                <td class="auto-style14" colspan="4">
+                <td class="auto-style14" colspan="7">
                     &nbsp;</td>
                 <td class="auto-style7" colspan="3">
                     &nbsp;</td>
@@ -213,7 +199,7 @@
                     <asp:Label ID="Label_Moneda" runat="server" Text="Moneda :"></asp:Label>
                     <asp:Label ID="L_moneda" runat="server"></asp:Label>
                 </td>
-                <td class="auto-style14" colspan="4">
+                <td class="auto-style14" colspan="7">
                     <asp:Label ID="Label_Mts2" runat="server" Text="Mts2 :"></asp:Label>
                     <asp:Label ID="L_Mts2" runat="server"></asp:Label>
                 </td>
@@ -232,26 +218,32 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style7">
+                <td class="auto-style5" rowspan="15">
                     &nbsp;</td>
-                <td class="auto-style7" colspan="12">
-                    &nbsp;</td>
-                <td class="auto-style7">
-                    &nbsp;</td>
-                <td class="auto-style7">
-                    &nbsp;</td>
-                <td class="auto-style7">
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style5" rowspan="12">
-                    &nbsp;</td>
-                <td class="auto-style18" colspan="3" rowspan="12">
+                <td class="auto-style18" colspan="6" rowspan="14">
                     <div id="divImageSlider" runat="server" class="flexslider">
                     </div>
                 </td>
                 <td colspan="9">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style5">Caracteristicas</span> </td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <tr>
+                <td colspan="9">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <tr>
+                <td colspan="9">
+                    &nbsp;<span class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Caracteristicas</span></td>
                 <td>
                     &nbsp;</td>
                 <td>
@@ -528,11 +520,7 @@
                                 
 
                     <tr>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td colspan="2">
+                <td colspan="4">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -557,20 +545,47 @@
                                 
 
                     <tr>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td colspan="2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td colspan="2">
-                    &nbsp;</td>
-                <td>
-                    <asp:Button ID="Btn_Volver" class="btn btn-full" runat="server" OnClick="Btn_Volver_Click1" Text="Volver" Height="57px" Width="183px" />
+                <td colspan="4">
                         </td>
                 <td>
+                        </td>
+                <td colspan="2">
+                        </td>
+                <td>
+                        </td>
+                <td>
+                        </td>
+                                
+
+                <td>
+                        </td>
+                                
+
+                <td>
+                        </td>
+                                
+
+                <td>
+                        </td>
+                                
+
+                    <tr>
+                <td class="auto-style5" colspan="2" style="text-align: center">
+                    <asp:Button ID="Btn_Volver" class="btn btn-full" runat="server" OnClick="Btn_Volver_Click1" Text="Volver" Height="49px" Width="147px" />
+                </td>
+                <td class="auto-style18">
+                    &nbsp;&nbsp;</td>
+                <td class="auto-style18">
+                    &nbsp;</td>
+                <td class="auto-style18">
+                    &nbsp;</td>
+                <td class="auto-style18">
+                    &nbsp;</td>
+                <td colspan="4">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td colspan="4" style="text-align: right">
                     &nbsp;</td>
                                 
 
@@ -590,6 +605,15 @@
     </div>
     <div id="divMessage" runat="server" style="display: none;">
     </div>
+    </form>
+        </div>
+        <table class="w-100">
+            <tr>
+                <td>&nbsp;&nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
