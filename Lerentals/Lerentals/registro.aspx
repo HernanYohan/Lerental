@@ -240,7 +240,7 @@
                                   </td>
                               <td class="auto-style26">
                                   </td>
-                              <td class="auto-style27" colspan="4">
+                              <td class="auto-style27" colspan="6">
                                   </td>
                               <td class="auto-style28">
                                   </td>
@@ -253,11 +253,11 @@
                               </td>
                               <td>
                                   &nbsp;</td>
-                              <td>
-                                  &nbsp;</td>
                               <td colspan="2">
                                   <asp:Label ID="Label_Rol" runat="server" Text="Selecciona tu Rol :  "></asp:Label>
-                                  <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                                  </td>
+                              <td colspan="3">
+                                  <asp:DropDownList ID="DDL_rol" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True">
                                       <asp:ListItem Value="1">Seleccione</asp:ListItem>
                                       <asp:ListItem Value="2">Empresa</asp:ListItem>
                                       <asp:ListItem Value="3">Mantenimiento</asp:ListItem>
@@ -272,7 +272,7 @@
                                   &nbsp;</td>
                               <td class="auto-style24">
                                   &nbsp;</td>
-                              <td colspan="4">
+                              <td colspan="6">
                                   &nbsp;</td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -282,7 +282,7 @@
                                   &nbsp;</td>
                               <td class="auto-style24">
                                   &nbsp;</td>
-                              <td colspan="4">
+                              <td colspan="6">
                                   &nbsp;</td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -293,38 +293,70 @@
                               <td class="auto-style24">
                                   <asp:Label ID="Label_Nombre" runat="server" Text="Nombre Completo :"></asp:Label>
                               </td>
-                              <td colspan="2">
+                              <td colspan="3">
                                   <asp:TextBox ID="TB_Nombre" runat="server"></asp:TextBox>
                               </td>
-                              <td>
-                                  <asp:Label ID="Label_Nit" runat="server" Text="Nit de la Empresa:" Visible="False"></asp:Label>
-                              </td>
-                              <td>
-                                  <asp:TextBox ID="TB_Nit" runat="server" Visible="False"></asp:TextBox>
-                              </td>
-                              <td class="auto-style16">
-                                  &nbsp;</td>
-                          </tr>
-                          <tr>
-                              <td class="auto-style15">
-                                  &nbsp;</td>
-                              <td class="auto-style24">
-                                  &nbsp;</td>
-                              <td colspan="4">
-                                  &nbsp;</td>
-                              <td class="auto-style16">
-                                  &nbsp;</td>
-                          </tr>
-                          <tr>
-                              <td class="auto-style15">
-                                  &nbsp;</td>
-                              <td class="auto-style24">
+                              <td colspan="2">
                                   <asp:Label ID="Label_sexo" runat="server" Text="Sexo:"></asp:Label>
                               </td>
-                              <td colspan="2">
+                              <td>
                                   <asp:TextBox ID="TB_Sexo" runat="server"></asp:TextBox>
                               </td>
+                              <td class="auto-style16">
+                                  &nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td class="auto-style15">
+                                  &nbsp;</td>
+                              <td class="auto-style24">
+                                  &nbsp;</td>
+                              <td colspan="6">
+                                  &nbsp;</td>
+                              <td class="auto-style16">
+                                  &nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td class="auto-style15">
+                                  &nbsp;</td>
+                              <td class="auto-style24">
+                                  <asp:Label ID="Label_Correo" runat="server" Text="Correo :"></asp:Label>
+                              </td>
+                              <td colspan="3">
+                                  <asp:TextBox ID="TB_Correo" runat="server"></asp:TextBox>
+                              </td>
+                              <td colspan="2">
+                                  <asp:Label ID="Label_Usuario" runat="server" Text="Usuario :"></asp:Label>
+                              </td>
                               <td>
+                                  <asp:TextBox ID="TB_Usuario" runat="server"></asp:TextBox>
+                              </td>
+                              <td class="auto-style16">
+                                  &nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td class="auto-style15">
+                                  &nbsp;</td>
+                              <td class="auto-style24">
+                                  &nbsp;</td>
+                              <td colspan="3">
+                                  &nbsp;</td>
+                              <td colspan="2">
+                                  &nbsp;</td>
+                              <td>
+                                  &nbsp;</td>
+                              <td class="auto-style16">
+                                  &nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td class="auto-style15">
+                                  &nbsp;</td>
+                              <td class="auto-style24">
+                                  <asp:Label ID="Label_Nit" runat="server" Text="Nit de la Empresa:" Visible="False"></asp:Label>
+                              </td>
+                              <td colspan="3">
+                                  <asp:TextBox ID="TB_Nit" runat="server" Visible="False"></asp:TextBox>
+                              </td>
+                              <td colspan="2">
                                   <asp:Label ID="Label_NombreEmpresa" runat="server" Text="Nombre de la Empresa :" Visible="False"></asp:Label>
                               </td>
                               <td>
@@ -336,7 +368,7 @@
                           <tr>
                               <td class="auto-style15">&nbsp;</td>
                               <td class="auto-style24">&nbsp;</td>
-                              <td colspan="4">
+                              <td colspan="6">
                                   &nbsp;</td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -344,18 +376,20 @@
                           <tr>
                               <td class="auto-style19"></td>
                               <td class="auto-style20">
-                                  <asp:Label ID="Label_Correo" runat="server" Text="Correo :"></asp:Label>
-                              </td>
-                              <td class="auto-style21" colspan="4">
-                                  <asp:TextBox ID="TB_Correo" runat="server"></asp:TextBox>
-                              </td>
+                                  &nbsp;</td>
+                              <td class="auto-style21" colspan="2">
+                                  &nbsp;</td>
+                              <td class="auto-style21" colspan="2">
+                                  &nbsp;</td>
+                              <td class="auto-style21" colspan="2">
+                                  &nbsp;</td>
                               <td class="auto-style22">
                                   </td>
                           </tr>
                           <tr>
                               <td class="auto-style15">&nbsp;</td>
                               <td class="auto-style24">&nbsp;</td>
-                              <td colspan="4">
+                              <td colspan="6">
                                   &nbsp;</td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -363,19 +397,18 @@
                           <tr>
                               <td class="auto-style15">&nbsp;</td>
                               <td class="auto-style24">
-                                  <asp:Label ID="Label_Usuario" runat="server" Text="Usuario :"></asp:Label>
-                              </td>
-                              <td colspan="2">
-                                  <asp:TextBox ID="TB_Uusuario" runat="server"></asp:TextBox>
-                              </td>
-                              <td colspan="2">
+                                  &nbsp;</td>
+                              <td colspan="3">
+                                  &nbsp;</td>
+                              <td colspan="3">
                                   <asp:Button ID="Btn_Guardar" runat="server" OnClick="Btn_Guardar_Click" Text="Guardar" />
+                                  <asp:Button ID="Btn_GuardarEmpresa" runat="server" OnClick="Btn_GuardarEmpresa_Click" Text="Guardar Empresa" Visible="False" />
                               </td>
                               <td class="auto-style16">
                                   &nbsp;</td>
                           </tr>
                           <tr>
-                              <td colspan="6" class="text-left">
+                              <td colspan="8" class="text-left">
                                   &nbsp;</td>
                               <td class="auto-style17">
                                   &nbsp;</td>
@@ -444,8 +477,7 @@
     </div>
   </footer>
   <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>--%>&nbsp;<!-- Required JavaScript Libraries --><script src="lib/jquery/jquery.min.js"></script><script src="lib/jquery/jquery-migrate.min.js"></script><script src="lib/superfish/hoverIntent.js"></script><script src="lib/superfish/superfish.min.js"></script><script src="lib/tether/js/tether.min.js"></script><script src="lib/stellar/stellar.min.js"></script><script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script><script src="lib/counterup/counterup.min.js"></script><script src="lib/waypoints/waypoints.min.js"></script><script src="lib/easing/easing.js"></script><script src="lib/stickyjs/sticky.js"></script><script src="lib/parallax/parallax.js"></script><script src="lib/lockfixed/lockfixed.min.js"></script><!-- Template Specisifc Custom Javascript File --><script src="js/custom.js"></script><script src="contactform/contactform.js"></script>
-            <%--<asp:Button ID="BT_Inico" runat="server" Text="Inico" />--%>               
-               <%--<asp:Button ID="BT_Inico" HorizontalAlign="Center"  class="btn btn-full" runat="server" OnClick="BT_Inico_Click1" Text="Inicio" Height="57px" Width="183px" />
+            <%--<asp:Button ID="BT_Inico" runat="server" Text="Inico" />--%>               <%--<asp:Button ID="BT_Inico" HorizontalAlign="Center"  class="btn btn-full" runat="server" OnClick="BT_Inico_Click1" Text="Inicio" Height="57px" Width="183px" />
     </form>--%>
 
             

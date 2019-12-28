@@ -31,13 +31,13 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.Label Label_Rol;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// DDL_rol control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList DDL_rol;
         
         /// <summary>
         /// Label_Nombre control.
@@ -58,24 +58,6 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.TextBox TB_Nombre;
         
         /// <summary>
-        /// Label_Nit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Nit;
-        
-        /// <summary>
-        /// TB_Nit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TB_Nit;
-        
-        /// <summary>
         /// Label_sexo control.
         /// </summary>
         /// <remarks>
@@ -92,24 +74,6 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TB_Sexo;
-        
-        /// <summary>
-        /// Label_NombreEmpresa control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_NombreEmpresa;
-        
-        /// <summary>
-        /// TB_NombreEmpresa control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TB_NombreEmpresa;
         
         /// <summary>
         /// Label_Correo control.
@@ -139,13 +103,49 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.Label Label_Usuario;
         
         /// <summary>
-        /// TB_Uusuario control.
+        /// TB_Usuario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TB_Uusuario;
+        protected global::System.Web.UI.WebControls.TextBox TB_Usuario;
+        
+        /// <summary>
+        /// Label_Nit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Nit;
+        
+        /// <summary>
+        /// TB_Nit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TB_Nit;
+        
+        /// <summary>
+        /// Label_NombreEmpresa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_NombreEmpresa;
+        
+        /// <summary>
+        /// TB_NombreEmpresa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TB_NombreEmpresa;
         
         /// <summary>
         /// Btn_Guardar control.
@@ -155,5 +155,14 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Btn_Guardar;
+        
+        /// <summary>
+        /// Btn_GuardarEmpresa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_GuardarEmpresa;
     }
 }
