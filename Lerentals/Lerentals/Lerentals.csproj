@@ -122,7 +122,6 @@
     <Content Include="css\scss-files.txt" />
     <Content Include="css\style.css" />
     <Content Include="registro.aspx" />
-    <Content Include="sliderLerental.aspx" />
     <Content Include="img\cover.jpg" />
     <Content Include="img\gadgets.png" />
     <Content Include="img\logo-nav.png" />
@@ -215,13 +214,6 @@
     </Compile>
     <Compile Include="registro.aspx.designer.cs">
       <DependentUpon>registro.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="sliderLerental.aspx.cs">
-      <DependentUpon>sliderLerental.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="sliderLerental.aspx.designer.cs">
-      <DependentUpon>sliderLerental.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

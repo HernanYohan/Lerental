@@ -129,6 +129,29 @@
             width: 27px;
             height: 26px;
         }
+        .auto-style29 {
+            width: 28px;
+            height: 59px;
+        }
+        .auto-style30 {
+            width: 176px;
+            height: 59px;
+        }
+        .auto-style31 {
+            height: 59px;
+        }
+        .auto-style32 {
+            width: 27px;
+            height: 59px;
+        }
+        .auto-style33 {
+            color: #3366CC;
+            font-size: xx-large;
+        }
+        .auto-style34 {
+            color: #0066FF;
+            font-size: x-large;
+        }
     </style>
 </head>
 
@@ -153,7 +176,7 @@
           </h1>
 
         <p class="tagline">
-            Encuentra Tu Hogar de la manera mas facil.
+            Encuentra Tu Hogar de la manera mas fácil.
         </p>
           <%--<a class="btn btn-full" href="#about">Get Started Now</a>--%>
 
@@ -228,7 +251,7 @@
   <section id="contact">
     <div class="container">
       <div class="row">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registra tus datos </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style34">Registrate ahora</span><span class="auto-style33"> </span> </div>
 
       <div class="row justify-content-center">
           <table class="w-100">
@@ -240,7 +263,7 @@
                                   </td>
                               <td class="auto-style26">
                                   </td>
-                              <td class="auto-style27" colspan="6">
+                              <td class="auto-style27" colspan="7">
                                   </td>
                               <td class="auto-style28">
                                   </td>
@@ -256,8 +279,8 @@
                               <td colspan="2">
                                   <asp:Label ID="Label_Rol" runat="server" Text="Selecciona tu Rol :  "></asp:Label>
                                   </td>
-                              <td colspan="3">
-                                  <asp:DropDownList ID="DDL_rol" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True">
+                              <td colspan="4">
+                                  <asp:DropDownList ID="DDL_rol" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True" Width="180px">
                                       <asp:ListItem Value="0">Seleccione</asp:ListItem>
                                       <asp:ListItem Value="1">Empresa</asp:ListItem>
                                       <asp:ListItem Value="2">Mantenimiento</asp:ListItem>
@@ -272,7 +295,7 @@
                                   &nbsp;</td>
                               <td class="auto-style24">
                                   &nbsp;</td>
-                              <td colspan="6">
+                              <td colspan="7">
                                   &nbsp;</td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -282,7 +305,7 @@
                                   &nbsp;</td>
                               <td class="auto-style24">
                                   &nbsp;</td>
-                              <td colspan="6">
+                              <td colspan="7">
                                   &nbsp;</td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -294,16 +317,15 @@
                                   <asp:Label ID="Label_Nombre" runat="server" Text="Nombre  :"></asp:Label>
                               </td>
                               <td colspan="3">
-                                  <asp:TextBox ID="TB_Nombre" runat="server"></asp:TextBox>
-                                  <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TB_Nombre" ErrorMessage="*" ForeColor="#3366CC" ValidationGroup="v2"></asp:RequiredFieldValidator>
+                                  <asp:TextBox ID="TB_Nombre" runat="server" MaxLength="20"></asp:TextBox>
                                   <asp:RequiredFieldValidator ID="RF_NOMBRE" runat="server" ControlToValidate="TB_Nombre" ErrorMessage="*" ForeColor="#3366CC" ValidationGroup="v1"></asp:RequiredFieldValidator>
                               </td>
-                              <td colspan="2">
+                              <td colspan="3">
                                   <asp:Label ID="Label_sexo" runat="server" Text="Sexo:"></asp:Label>
                               </td>
                               <td>
                                   <asp:DropDownList ID="DDL_Sexo" runat="server" Width="180px">
-                                      <asp:ListItem Value="0">Selecciones</asp:ListItem>
+                                      <asp:ListItem Value="0">Seleccione</asp:ListItem>
                                       <asp:ListItem Value="1">Masculino</asp:ListItem>
                                       <asp:ListItem Value="2">Femenino</asp:ListItem>
                                   </asp:DropDownList>
@@ -316,8 +338,8 @@
                                   &nbsp;</td>
                               <td class="auto-style24">
                                   &nbsp;</td>
-                              <td colspan="6">
-                                  <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TB_Nombre" ErrorMessage="Solo Letras" ForeColor="#3366CC" ValidationExpression="^[A-Za-z]*$"></asp:RegularExpressionValidator>
+                              <td colspan="7">
+                                  <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TB_Nombre" ErrorMessage="Solo Letras" ForeColor="#3366CC" ValidationExpression="^[A-Za-z]*$" ValidationGroup="v1"></asp:RegularExpressionValidator>
                               </td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -326,17 +348,17 @@
                               <td class="auto-style15">
                                   &nbsp;</td>
                               <td class="auto-style24">
-                                  <asp:Label ID="Label_Correo" runat="server" Text="Correo :"></asp:Label>
+                                  <asp:Label ID="Label_Correo" runat="server" Text="Correo Electronico:"></asp:Label>
                               </td>
                               <td colspan="3">
-                                  <asp:TextBox ID="TB_Correo" runat="server"></asp:TextBox>
+                                  <asp:TextBox ID="TB_Correo" runat="server" MaxLength="45"></asp:TextBox>
                                   <asp:RequiredFieldValidator ID="RF_Correo" runat="server" ControlToValidate="TB_Correo" ErrorMessage="*" ForeColor="#3366CC" ValidationGroup="v1"></asp:RequiredFieldValidator>
                               </td>
-                              <td colspan="2">
+                              <td colspan="3">
                                   <asp:Label ID="Label_Usuario" runat="server" Text="Usuario :"></asp:Label>
                               </td>
                               <td>
-                                  <asp:TextBox ID="TB_Usuario" runat="server"></asp:TextBox>
+                                  <asp:TextBox ID="TB_Usuario" runat="server" MaxLength="20"></asp:TextBox>
                                   <asp:RequiredFieldValidator ID="RF_Usuario" runat="server" ControlToValidate="TB_Usuario" ErrorMessage="*" ForeColor="#3366CC" ValidationGroup="v1"></asp:RequiredFieldValidator>
                               </td>
                               <td class="auto-style16">
@@ -348,9 +370,9 @@
                               <td class="auto-style24">
                                   &nbsp;</td>
                               <td colspan="3">
-                                  <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TB_Correo" ErrorMessage="No es un correo &quot;@&quot;,&quot;.&quot;" ForeColor="#3366CC" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                                  <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TB_Correo" ErrorMessage="No es un correo &quot;@&quot;,&quot;.&quot;" ForeColor="#3366CC" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="v1"></asp:RegularExpressionValidator>
                               </td>
-                              <td colspan="2">
+                              <td colspan="3">
                                   &nbsp;</td>
                               <td>
                                   &nbsp;</td>
@@ -364,15 +386,15 @@
                                   <asp:Label ID="Label_Nit" runat="server" Text="Nit de la Empresa:" Visible="False"></asp:Label>
                               </td>
                               <td colspan="3">
-                                  <asp:TextBox ID="TB_Nit" runat="server" Visible="False"></asp:TextBox>
-                                  <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TB_Nit" ErrorMessage="*" ForeColor="#3366CC" ValidationGroup="v2"></asp:RequiredFieldValidator>
+                                  <asp:TextBox ID="TB_Nit" runat="server" Visible="False" MaxLength="16"></asp:TextBox>
+                                  <asp:RequiredFieldValidator ID="RF_Nit2" runat="server" ControlToValidate="TB_Nit" ErrorMessage="*" ForeColor="White" ValidationGroup="v1"></asp:RequiredFieldValidator>
                               </td>
-                              <td colspan="2">
+                              <td colspan="3">
                                   <asp:Label ID="Label_NombreEmpresa" runat="server" Text="Nombre de la Empresa :" Visible="False"></asp:Label>
                               </td>
                               <td>
-                                  <asp:TextBox ID="TB_NombreEmpresa" runat="server" Visible="False"></asp:TextBox>
-                                  <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TB_NombreEmpresa" ErrorMessage="*" ForeColor="#3366CC" ValidationGroup="v2"></asp:RequiredFieldValidator>
+                                  <asp:TextBox ID="TB_NombreEmpresa" runat="server" Visible="False" MaxLength="25"></asp:TextBox>
+                                  <asp:RequiredFieldValidator ID="RF_Empresa2" runat="server" ControlToValidate="TB_NombreEmpresa" ErrorMessage="*" ForeColor="White" ValidationGroup="v1"></asp:RequiredFieldValidator>
                               </td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -380,7 +402,7 @@
                           <tr>
                               <td class="auto-style15">&nbsp;</td>
                               <td class="auto-style24">&nbsp;</td>
-                              <td colspan="6">
+                              <td colspan="7">
                                   &nbsp;</td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -392,8 +414,10 @@
                               <td class="auto-style21" colspan="2">
                                   &nbsp;</td>
                               <td class="auto-style21" colspan="2">
-                                  &nbsp;</td>
-                              <td class="auto-style21" colspan="2">
+                                  <%-- <asp:Button ID="Btn_Volver" class="btn btn-full" runat="server" OnClick="Btn_Guardar_Click" Text="Guardar" Height="49px" Width="147px" />--%>
+
+                              </td>
+                              <td class="auto-style21" colspan="3">
                                   &nbsp;</td>
                               <td class="auto-style22">
                                   </td>
@@ -401,26 +425,29 @@
                           <tr>
                               <td class="auto-style15">&nbsp;</td>
                               <td class="auto-style24">&nbsp;</td>
-                              <td colspan="6">
+                              <td colspan="5" style="text-align: center">
+
+                                  <asp:Button ID="Btn_Guardar" class="btn btn-full" runat="server" OnClick="Btn_Guardar_Click" Text="Guardar Usuario" ValidationGroup="v1" />
+                                  </td>
+                              <td colspan="2">
                                   &nbsp;</td>
                               <td class="auto-style16">
                                   &nbsp;</td>
                           </tr>
                           <tr>
-                              <td class="auto-style15">&nbsp;</td>
-                              <td class="auto-style24">
-                                  &nbsp;</td>
-                              <td colspan="3">
-                                  &nbsp;</td>
-                              <td colspan="3">
-                                  <asp:Button ID="Btn_Guardar" runat="server" OnClick="Btn_Guardar_Click" Text="Guardar" ValidationGroup="v1" />
-                                  <asp:Button ID="Btn_GuardarEmpresa" runat="server" OnClick="Btn_GuardarEmpresa_Click" Text="Guardar Empresa" Visible="False" ValidationGroup="v2" />
+                              <td class="auto-style29"></td>
+                              <td class="auto-style30">
+                                  </td>
+                              <td colspan="5" class="auto-style31" style="text-align: center">
+                                  <asp:Button ID="Btn_GuardarEmpresa"  class="btn btn-full"  runat="server" OnClick="Btn_GuardarEmpresa_Click" Text="Guardar Empresa" Visible="False" ValidationGroup="v1" />
                               </td>
-                              <td class="auto-style16">
-                                  &nbsp;</td>
+                              <td colspan="2" class="auto-style31">
+                                  </td>
+                              <td class="auto-style32">
+                                  </td>
                           </tr>
                           <tr>
-                              <td colspan="8" class="text-left">
+                              <td colspan="9" class="text-left">
                                   &nbsp;</td>
                               <td class="auto-style17">
                                   &nbsp;</td>
@@ -444,10 +471,10 @@
 
     
 
-    </form>
+  
     
 
-   <%-- </form>--%>
+    </form>
 
   <footer class="site-footer">
     <div class="bottom">
@@ -489,7 +516,8 @@
     </div>
   </footer>
   <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>--%>&nbsp;<!-- Required JavaScript Libraries --><script src="lib/jquery/jquery.min.js"></script><script src="lib/jquery/jquery-migrate.min.js"></script><script src="lib/superfish/hoverIntent.js"></script><script src="lib/superfish/superfish.min.js"></script><script src="lib/tether/js/tether.min.js"></script><script src="lib/stellar/stellar.min.js"></script><script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script><script src="lib/counterup/counterup.min.js"></script><script src="lib/waypoints/waypoints.min.js"></script><script src="lib/easing/easing.js"></script><script src="lib/stickyjs/sticky.js"></script><script src="lib/parallax/parallax.js"></script><script src="lib/lockfixed/lockfixed.min.js"></script><!-- Template Specisifc Custom Javascript File --><script src="js/custom.js"></script><script src="contactform/contactform.js"></script>
-            <%--<asp:Button ID="BT_Inico" runat="server" Text="Inico" />--%><%--<asp:Button ID="BT_Inico" HorizontalAlign="Center"  class="btn btn-full" runat="server" OnClick="BT_Inico_Click1" Text="Inicio" Height="57px" Width="183px" />
+            <%--<asp:Button ID="BT_Inico" runat="server" Text="Inico" />--%>
+ <%--           <asp:Button ID="BT_Inico" HorizontalAlign="Center"  class="btn btn-full" runat="server" OnClick="BT_Inico_Click1" Text="Inicio" Height="57px" Width="183px" />
     </form>--%>
 
             

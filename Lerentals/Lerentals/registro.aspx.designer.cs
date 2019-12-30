@@ -58,15 +58,6 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.TextBox TB_Nombre;
         
         /// <summary>
-        /// RequiredFieldValidator3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
-        
-        /// <summary>
         /// RF_NOMBRE control.
         /// </summary>
         /// <remarks>
@@ -184,13 +175,13 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.TextBox TB_Nit;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// RF_Nit2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_Nit2;
         
         /// <summary>
         /// Label_NombreEmpresa control.
@@ -211,13 +202,13 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.TextBox TB_NombreEmpresa;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// RF_Empresa2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_Empresa2;
         
         /// <summary>
         /// Btn_Guardar control.
