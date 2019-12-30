@@ -31,64 +31,101 @@ namespace Lerentals
             rol = rol + 1;
             string estado = "Activo";
             int nit = 0;
-            string perfil = "";
-            if (DDL_rol.SelectedIndex == 1)
-            {
-                perfil = "Empresa";
-            }
-            if (DDL_rol.SelectedIndex == 2)
-            {
-                perfil = "Mantenimiento";
-            }
-            if (DDL_rol.SelectedIndex == 3)
-            {
-                perfil = "Arrendador";
-            }
-
             string sexo = "";
-            if (DDL_Sexo.SelectedIndex == 1)
+
+            int n = 0;
+            do
             {
-                sexo = "Masculino";
-            }
-            if (DDL_Sexo.SelectedIndex == 2)
+                if (DDL_Sexo.SelectedIndex > 0)
+                {
+                    switch (int.Parse(DDL_Sexo.SelectedValue))
+                    {
+                        case 1:
+                            sexo = "Masculino";
+                            break;
+                        case 2:
+                            sexo = "Femenino";
+                            break;
+                    }
+                }else
+                {
+                    string script = "alert('Seleccione Sexo ...');";
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+                    return;
+                }
+            } while (n < 0);
+
+            string perfil = "";
+            int m = 0;
+            do
             {
-                sexo = "Femenino";
-            }
+                if (DDL_rol.SelectedIndex > 0)
+                {
+                    switch (int.Parse(DDL_rol.SelectedValue))
+                    {
+                        case 1:
+                            perfil = "Empresa";
+                            break;
+                        case 2:
+                            perfil = "Mantenimiento";
+                            break;
+                        case 3:
+                            perfil = "Arrendador";
+                            break;
+                    }
+                }
+                else
+                {
+                    string script = "alert('Seleccione un ROL ...');";
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+                    return;
+                }
+            } while (m < 0);
 
 
             insertar(TB_Usuario.Text,clave,estado,rol,TB_Nombre.Text,nit,sexo,TB_Correo.Text,perfil);
-        }         
+        }
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DDL_rol.SelectedIndex == 1 ) { 
-                Label_NombreEmpresa.Visible = true;
-                TB_NombreEmpresa.Visible = true;
-                Label_Nit.Visible = true;
-                TB_Nit.Visible = true;
-                Btn_Guardar.Visible = false;
-                Btn_GuardarEmpresa.Visible = true;
-            }
-            if (DDL_rol.SelectedIndex == 2)
+ 
+            int n = 0;
+
+            do
             {
-                Label_NombreEmpresa.Visible = false;
-                TB_NombreEmpresa.Visible = false;
-                Label_Nit.Visible = false;
-                TB_Nit.Visible = false;
-                Btn_Guardar.Visible = true;
-                Btn_GuardarEmpresa.Visible = false;
 
-            }
-            if (DDL_rol.SelectedIndex == 3)
-            {
-                Label_NombreEmpresa.Visible = false;
-                TB_NombreEmpresa.Visible = false;
-                Label_Nit.Visible = false;
-                TB_Nit.Visible = false;
-                Btn_Guardar.Visible = true;
-                Btn_GuardarEmpresa.Visible = false;
+                Session["estado"] = DDL_rol.SelectedValue;
 
+                switch (int.Parse(DDL_rol.SelectedValue))
+                {
+                    case 1:
+                        Label_NombreEmpresa.Visible = true;
+                        TB_NombreEmpresa.Visible = true;
+                        Label_Nit.Visible = true;
+                        TB_Nit.Visible = true;
+                        Btn_Guardar.Visible = false;
+                        Btn_GuardarEmpresa.Visible = true;
+                        break;
+                    case 2:
+                        Label_NombreEmpresa.Visible = false;
+                        TB_NombreEmpresa.Visible = false;
+                        Label_Nit.Visible = false;
+                        TB_Nit.Visible = false;
+                        Btn_Guardar.Visible = true;
+                        Btn_GuardarEmpresa.Visible = false;
+                        break;
+                    case 3:
+                        Label_NombreEmpresa.Visible = false;
+                        TB_NombreEmpresa.Visible = false;
+                        Label_Nit.Visible = false;
+                        TB_Nit.Visible = false;
+                        Btn_Guardar.Visible = true;
+                        Btn_GuardarEmpresa.Visible = false;
 
-            }
+                        break;
+                }
+
+            } while (n < 0);
+
 
         }
 
@@ -144,30 +181,57 @@ namespace Lerentals
             int rol = DDL_rol.SelectedIndex;
             rol = rol + 1;
             string estado = "Activo";
-
             string sexo = "";
-            if (DDL_Sexo.SelectedIndex == 1)
-            {
-                sexo = "Masculino";
-            }
-            if (DDL_Sexo.SelectedIndex == 2)
-            {
-                sexo = "Femenino";
-            }
-            string perfil = "";
-            if (DDL_rol.SelectedIndex == 1)
-            {
-                perfil = "Empresa";
-            }
-            if (DDL_rol.SelectedIndex == 2)
-            {
-                perfil = "Mantenimiento";
-            }
-            if (DDL_rol.SelectedIndex == 3)
-            {
-                perfil = "Arrendador";
-            }
 
+            int n = 0;
+            do
+            {
+                if (DDL_Sexo.SelectedIndex > 0)
+                {
+                    switch (int.Parse(DDL_Sexo.SelectedValue))
+                    {
+                        case 1:
+                            sexo = "Masculino";
+                            break;
+                        case 2:
+                            sexo = "Femenino";
+                            break;
+                    }
+                }
+                else
+                {
+                    string script = "alert('Seleccione Sexo ...');";
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+                    return;
+                }
+            } while (n < 0);
+
+            string perfil = "";
+            int m = 0;
+            do
+            {
+                if (DDL_rol.SelectedIndex > 0)
+                {
+                    switch (int.Parse(DDL_rol.SelectedValue))
+                    {
+                        case 1:
+                            perfil = "Empresa";
+                            break;
+                        case 2:
+                            perfil = "Mantenimiento";
+                            break;
+                        case 3:
+                            perfil = "Arrendador";
+                            break;
+                    }
+                }
+                else
+                {
+                    string script = "alert('Seleccione un ROL ...');";
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+                    return;
+                }
+            } while (m < 0);
 
             insertarEmpresa(TB_Usuario.Text, clave, estado, rol, TB_Nombre.Text, sexo, TB_Correo.Text,perfil,Convert.ToInt32(TB_Nit.Text),TB_NombreEmpresa.Text);
         }
