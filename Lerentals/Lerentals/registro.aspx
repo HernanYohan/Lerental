@@ -295,12 +295,17 @@
                               </td>
                               <td colspan="3">
                                   <asp:TextBox ID="TB_Nombre" runat="server"></asp:TextBox>
+                                  <asp:RequiredFieldValidator ID="RF_NOMBRE" runat="server" ControlToValidate="TB_Nombre" ErrorMessage="*" ForeColor="#3366CC"></asp:RequiredFieldValidator>
                               </td>
                               <td colspan="2">
                                   <asp:Label ID="Label_sexo" runat="server" Text="Sexo:"></asp:Label>
                               </td>
                               <td>
-                                  <asp:TextBox ID="TB_Sexo" runat="server"></asp:TextBox>
+                                  <asp:DropDownList ID="DDL_Sexo" runat="server" Width="180px">
+                                      <asp:ListItem Value="0">Selecciones</asp:ListItem>
+                                      <asp:ListItem Value="1">Masculino</asp:ListItem>
+                                      <asp:ListItem Value="2">Femenino</asp:ListItem>
+                                  </asp:DropDownList>
                               </td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -323,12 +328,14 @@
                               </td>
                               <td colspan="3">
                                   <asp:TextBox ID="TB_Correo" runat="server"></asp:TextBox>
+                                  <asp:RequiredFieldValidator ID="RF_Correo" runat="server" ControlToValidate="TB_Correo" ErrorMessage="*" ForeColor="#3366CC"></asp:RequiredFieldValidator>
                               </td>
                               <td colspan="2">
                                   <asp:Label ID="Label_Usuario" runat="server" Text="Usuario :"></asp:Label>
                               </td>
                               <td>
                                   <asp:TextBox ID="TB_Usuario" runat="server"></asp:TextBox>
+                                  <asp:RequiredFieldValidator ID="RF_Usuario" runat="server" ControlToValidate="TB_Usuario" ErrorMessage="*" ForeColor="#3366CC"></asp:RequiredFieldValidator>
                               </td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -477,7 +484,7 @@
     </div>
   </footer>
   <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>--%>&nbsp;<!-- Required JavaScript Libraries --><script src="lib/jquery/jquery.min.js"></script><script src="lib/jquery/jquery-migrate.min.js"></script><script src="lib/superfish/hoverIntent.js"></script><script src="lib/superfish/superfish.min.js"></script><script src="lib/tether/js/tether.min.js"></script><script src="lib/stellar/stellar.min.js"></script><script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script><script src="lib/counterup/counterup.min.js"></script><script src="lib/waypoints/waypoints.min.js"></script><script src="lib/easing/easing.js"></script><script src="lib/stickyjs/sticky.js"></script><script src="lib/parallax/parallax.js"></script><script src="lib/lockfixed/lockfixed.min.js"></script><!-- Template Specisifc Custom Javascript File --><script src="js/custom.js"></script><script src="contactform/contactform.js"></script>
-            <%--<asp:Button ID="BT_Inico" runat="server" Text="Inico" />--%>               <%--<asp:Button ID="BT_Inico" HorizontalAlign="Center"  class="btn btn-full" runat="server" OnClick="BT_Inico_Click1" Text="Inicio" Height="57px" Width="183px" />
+            <%--<asp:Button ID="BT_Inico" runat="server" Text="Inico" />--%><%--<asp:Button ID="BT_Inico" HorizontalAlign="Center"  class="btn btn-full" runat="server" OnClick="BT_Inico_Click1" Text="Inicio" Height="57px" Width="183px" />
     </form>--%>
 
             

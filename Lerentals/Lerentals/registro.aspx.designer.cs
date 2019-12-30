@@ -58,6 +58,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.TextBox TB_Nombre;
         
         /// <summary>
+        /// RF_NOMBRE control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_NOMBRE;
+        
+        /// <summary>
         /// Label_sexo control.
         /// </summary>
         /// <remarks>
@@ -67,13 +76,13 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.Label Label_sexo;
         
         /// <summary>
-        /// TB_Sexo control.
+        /// DDL_Sexo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TB_Sexo;
+        protected global::System.Web.UI.WebControls.DropDownList DDL_Sexo;
         
         /// <summary>
         /// Label_Correo control.
@@ -94,6 +103,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.TextBox TB_Correo;
         
         /// <summary>
+        /// RF_Correo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_Correo;
+        
+        /// <summary>
         /// Label_Usuario control.
         /// </summary>
         /// <remarks>
@@ -110,6 +128,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TB_Usuario;
+        
+        /// <summary>
+        /// RF_Usuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_Usuario;
         
         /// <summary>
         /// Label_Nit control.

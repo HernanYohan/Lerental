@@ -12,7 +12,7 @@ namespace Lerentals
     {
 
         Random rdn = new Random();
-
+        
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,22 +26,37 @@ namespace Lerentals
 
         protected void Btn_Guardar_Click(object sender, EventArgs e)
         {
-            int clave = rdn.Next(1000000, 9000000);
+            int clave = rdn.Next(10000000, 90000000);
             int rol = DDL_rol.SelectedIndex;
             rol = rol + 1;
             string estado = "Activo";
+            int nit = 0;
+            string perfil = "";
+            if (DDL_rol.SelectedIndex == 1)
+            {
+                perfil = "Empresa";
+            }
+            if (DDL_rol.SelectedIndex == 2)
+            {
+                perfil = "Mantenimiento";
+            }
+            if (DDL_rol.SelectedIndex == 3)
+            {
+                perfil = "Arrendador";
+            }
+
+            string sexo = "";
+            if (DDL_Sexo.SelectedIndex == 1)
+            {
+                sexo = "Masculino";
+            }
+            if (DDL_Sexo.SelectedIndex == 2)
+            {
+                sexo = "Femenino";
+            }
 
 
-            //if (DDL_sexo.SelectedIndex == 1)
-            //{
-            //    sexo ="Masculino";
-            //}
-            //if (DDL_sexo.SelectedIndex == 2)
-            //{
-            //    sexo ="Femenino";
-            //}
-            
-            insertar(TB_Usuario.Text,clave,estado,rol,TB_Nombre.Text,TB_Sexo.Text,TB_Correo.Text);
+            insertar(TB_Usuario.Text,clave,estado,rol,TB_Nombre.Text,nit,sexo,TB_Correo.Text,perfil);
         }         
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -77,42 +92,47 @@ namespace Lerentals
 
         }
 
-        public string insertar( string usuario,int clave, string estado,int rol, string nombre,string sexo, string correo)
+        public string insertar( string usuario,int clave, string estado,int rol, string nombre,int nit,string sexo, string correo, string perfil)
         {
 
 
             SqlConnection conexion = BdComun.ObtenerConexion();
             string salida = "se inserto";
+            ClientScriptManager cm = this.ClientScript;
+
             try
             {
-                SqlCommand consulta = new SqlCommand(string.Format("insert into tbl_usuarios(user_login,user_pass,user_stat,perfil_id,user_name,user_sexo,user_mail)values('" + usuario+"',"+clave+",'"+estado+"',"+rol+",'"+nombre+"','"+sexo+"','"+correo+"')"), conexion);
+                SqlCommand consulta = new SqlCommand(string.Format("insert into tbl_usuarios(user_login,user_pass,user_stat,perfil_id,user_name,nit_empr,user_sexo,user_mail,perfil)values('" + usuario+"',"+clave+",'"+estado+"',"+rol+",'"+nombre+"',"+nit+",'"+sexo+"','"+correo+"','"+perfil+"')"), conexion);
                 consulta.ExecuteNonQuery();
-                //SqlDataAdapter da = new SqlDataAdapter(consulta);
+                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('Regitrado correctamente');window.location=\"index.aspx\"</script>");
+                
             }
             catch(Exception ex) {
-                salida = "no se logro insertar" + ex.ToString();
+                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('No se pudo registrar');</script>");
             }
             
             return salida;
         }
 
-        public string insertarEmpresa(string usuario, int clave, string estado, int rol, string nombre, string sexo, string correo,int nit,string nombreEmpresa)
+        public string insertarEmpresa(string usuario, int clave, string estado, int rol, string nombre, string sexo, string correo,string perfil,int nit,string nombreEmpresa)
         {
 
-
+            ClientScriptManager cm = this.ClientScript;
             SqlConnection conexion = BdComun.ObtenerConexion();
             string salida = "se inserto";
             try
             {
-                SqlCommand consulta = new SqlCommand(string.Format("insert into tbl_usuarios(user_login,user_pass,user_stat,perfil_id,user_name,nit_empr,user_sexo,user_mail)values('" + usuario + "'," + clave + ",'" + estado + "'," + rol + ",'" + nombre + "',"+nit+",'" + sexo + "','" + correo + "')"), conexion);
+                SqlCommand consulta = new SqlCommand(string.Format("insert into tbl_usuarios(user_login,user_pass,user_stat,perfil_id,user_name,nit_empr,user_sexo,user_mail,perfil)values('" + usuario + "'," + clave + ",'" + estado + "'," + rol + ",'" + nombre + "',"+nit+",'" + sexo + "','" + correo + "','"+perfil+"')"), conexion);
                 consulta.ExecuteNonQuery();
                 SqlCommand consultaEmpresa = new SqlCommand(string.Format("insert into tbl_empresas(nit_empr,empr_name,empr_stat)values(" + nit + ",'"+nombreEmpresa+"','"+estado+"')"), conexion);
                 consultaEmpresa.ExecuteNonQuery();
+                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('Regitrado correctamente');window.location=\"index.aspx\"</script>");
+
                 //SqlDataAdapter da = new SqlDataAdapter(consulta);
             }
             catch (Exception ex)
             {
-                salida = "no se logro insertar" + ex.ToString();
+                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('No se pudo registrar');</script>");
             }
 
             return salida;
@@ -120,15 +140,36 @@ namespace Lerentals
 
         protected void Btn_GuardarEmpresa_Click(object sender, EventArgs e)
         {
-            int clave = rdn.Next(1000000, 9000000);
+            int clave = rdn.Next(10000000, 90000000);
             int rol = DDL_rol.SelectedIndex;
             rol = rol + 1;
             string estado = "Activo";
-            
 
-           
-            
-            insertarEmpresa(TB_Usuario.Text, clave, estado, rol, TB_Nombre.Text, TB_Sexo.Text, TB_Correo.Text,Convert.ToInt32(TB_Nit.Text),TB_NombreEmpresa.Text);
+            string sexo = "";
+            if (DDL_Sexo.SelectedIndex == 1)
+            {
+                sexo = "Masculino";
+            }
+            if (DDL_Sexo.SelectedIndex == 2)
+            {
+                sexo = "Femenino";
+            }
+            string perfil = "";
+            if (DDL_rol.SelectedIndex == 1)
+            {
+                perfil = "Empresa";
+            }
+            if (DDL_rol.SelectedIndex == 2)
+            {
+                perfil = "Mantenimiento";
+            }
+            if (DDL_rol.SelectedIndex == 3)
+            {
+                perfil = "Arrendador";
+            }
+
+
+            insertarEmpresa(TB_Usuario.Text, clave, estado, rol, TB_Nombre.Text, sexo, TB_Correo.Text,perfil,Convert.ToInt32(TB_Nit.Text),TB_NombreEmpresa.Text);
         }
     }
 }
