@@ -383,18 +383,18 @@
                               <td class="auto-style15">
                                   &nbsp;</td>
                               <td class="auto-style24">
-                                  <asp:Label ID="Label_Nit" runat="server" Text="Nit de la Empresa:" Visible="False"></asp:Label>
-                              </td>
-                              <td colspan="3">
-                                  <asp:TextBox ID="TB_Nit" runat="server" Visible="False" MaxLength="10"></asp:TextBox>
-                                  <asp:RequiredFieldValidator ID="RF_Nit2" runat="server" ControlToValidate="TB_Nit" ErrorMessage="*" ForeColor="White" ValidationGroup="v1"></asp:RequiredFieldValidator>
-                              </td>
-                              <td colspan="3">
                                   <asp:Label ID="Label_NombreEmpresa" runat="server" Text="Nombre de la Empresa :" Visible="False"></asp:Label>
                               </td>
-                              <td>
-                                  <asp:TextBox ID="TB_NombreEmpresa" runat="server" Visible="False" MaxLength="25"></asp:TextBox>
+                              <td colspan="3">
+                                  <asp:TextBox ID="TB_NombreEmpresa" runat="server" Visible="False" MaxLength="25" OnTextChanged="TB_NombreEmpresa_TextChanged"></asp:TextBox>
                                   <asp:RequiredFieldValidator ID="RF_Empresa2" runat="server" ControlToValidate="TB_NombreEmpresa" ErrorMessage="*" ForeColor="White" ValidationGroup="v1"></asp:RequiredFieldValidator>
+                              </td>
+                              <td colspan="3">
+                                  <asp:Label ID="Label_Nit" runat="server" Text="Nit de la Empresa:" Visible="False"></asp:Label>
+                              </td>
+                              <td>
+                                  <asp:TextBox ID="TB_Nit" runat="server" Visible="False" MaxLength="10"></asp:TextBox>
+                                  <asp:RequiredFieldValidator ID="RF_Nit2" runat="server" ControlToValidate="TB_Nit" ErrorMessage="*" ForeColor="White" ValidationGroup="v1"></asp:RequiredFieldValidator>
                               </td>
                               <td class="auto-style16">
                                   &nbsp;</td>
