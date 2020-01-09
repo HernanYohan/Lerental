@@ -113,7 +113,7 @@
                     <td>
                         &nbsp;</td>
                     <td>
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:inmobiliariasConnectionString %>" SelectCommand="SELECT distinct proyecto_cuidad from v_matrix_basic_inmuebles "></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:inmobiliariasConnectionString %>" SelectCommand="SELECT DISTINCT proyecto_cuidad FROM tbl_proyectos"></asp:SqlDataSource>
                     </td>
                     <td>
                         &nbsp;</td>

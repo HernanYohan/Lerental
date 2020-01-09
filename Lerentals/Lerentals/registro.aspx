@@ -318,7 +318,7 @@
                               </td>
                               <td colspan="3">
                                   <asp:TextBox ID="TB_Nombre" runat="server" MaxLength="20"></asp:TextBox>
-                                  <asp:RequiredFieldValidator ID="RF_NOMBRE" runat="server" ControlToValidate="TB_Nombre" ErrorMessage="*" ForeColor="#3366CC" ValidationGroup="v1"></asp:RequiredFieldValidator>
+                                  <asp:RequiredFieldValidator ID="RF_NOMBRE" runat="server" ControlToValidate="TB_Nombre" ErrorMessage="Campo Obligatorio" ForeColor="#3366CC" ValidationGroup="v1"></asp:RequiredFieldValidator>
                               </td>
                               <td colspan="3">
                                   <asp:Label ID="Label_sexo" runat="server" Text="Sexo:"></asp:Label>
@@ -352,14 +352,14 @@
                               </td>
                               <td colspan="3">
                                   <asp:TextBox ID="TB_Correo" runat="server" MaxLength="45"></asp:TextBox>
-                                  <asp:RequiredFieldValidator ID="RF_Correo" runat="server" ControlToValidate="TB_Correo" ErrorMessage="*" ForeColor="#3366CC" ValidationGroup="v1"></asp:RequiredFieldValidator>
+                                  <asp:RequiredFieldValidator ID="RF_Correo" runat="server" ControlToValidate="TB_Correo" ErrorMessage="Campo Obligatorio" ForeColor="#3366CC" ValidationGroup="v1"></asp:RequiredFieldValidator>
                               </td>
                               <td colspan="3">
                                   <asp:Label ID="Label_Usuario" runat="server" Text="Usuario :"></asp:Label>
                               </td>
                               <td>
                                   <asp:TextBox ID="TB_Usuario" runat="server" MaxLength="20"></asp:TextBox>
-                                  <asp:RequiredFieldValidator ID="RF_Usuario" runat="server" ControlToValidate="TB_Usuario" ErrorMessage="*" ForeColor="#3366CC" ValidationGroup="v1"></asp:RequiredFieldValidator>
+                                  <asp:RequiredFieldValidator ID="RF_Usuario" runat="server" ControlToValidate="TB_Usuario" ErrorMessage="Campo Obligatorio" ForeColor="#3366CC" ValidationGroup="v1"></asp:RequiredFieldValidator>
                               </td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -386,7 +386,7 @@
                                   <asp:Label ID="Label_Nit" runat="server" Text="Nit de la Empresa:" Visible="False"></asp:Label>
                               </td>
                               <td colspan="3">
-                                  <asp:TextBox ID="TB_Nit" runat="server" Visible="False" MaxLength="16"></asp:TextBox>
+                                  <asp:TextBox ID="TB_Nit" runat="server" Visible="False" MaxLength="10"></asp:TextBox>
                                   <asp:RequiredFieldValidator ID="RF_Nit2" runat="server" ControlToValidate="TB_Nit" ErrorMessage="*" ForeColor="White" ValidationGroup="v1"></asp:RequiredFieldValidator>
                               </td>
                               <td colspan="3">

@@ -5,12 +5,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace Lerentals
 {
     public partial class registro : System.Web.UI.Page
     {
-
         Random rdn = new Random();
         
 
@@ -26,6 +26,8 @@ namespace Lerentals
 
         protected void Btn_Guardar_Click(object sender, EventArgs e)
         {
+
+
             int clave = rdn.Next(10000000, 90000000);
             int rol = DDL_rol.SelectedIndex;
             rol = rol + 1;
@@ -84,7 +86,9 @@ namespace Lerentals
 
 
             insertar(TB_Usuario.Text,clave,estado,rol,TB_Nombre.Text,nit,sexo,TB_Correo.Text,perfil);
-        }
+
+
+}
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
  
@@ -133,12 +137,13 @@ namespace Lerentals
         {
 
 
-            SqlConnection conexion = BdComun.ObtenerConexion();
+          
             string salida = "se inserto";
             ClientScriptManager cm = this.ClientScript;
 
             try
             {
+                SqlConnection conexion = BdComun.ObtenerConexion();
                 SqlCommand consulta = new SqlCommand(string.Format("insert into tbl_usuarios(user_login,user_pass,user_stat,perfil_id,user_name,nit_empr,user_sexo,user_mail,perfil)values('" + usuario+"',"+clave+",'"+estado+"',"+rol+",'"+nombre+"',"+nit+",'"+sexo+"','"+correo+"','"+perfil+"')"), conexion);
                 consulta.ExecuteNonQuery();
                 cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('Regitrado correctamente');window.location=\"index.aspx\"</script>");
@@ -150,6 +155,7 @@ namespace Lerentals
             
             return salida;
         }
+
 
         public string insertarEmpresa(string usuario, int clave, string estado, int rol, string nombre, string sexo, string correo,string perfil,int nit,string nombreEmpresa)
         {
@@ -175,65 +181,103 @@ namespace Lerentals
             return salida;
         }
 
+        public int validarEmpresa(int nit)
+        {
+            
+            ClientScriptManager cm = this.ClientScript;
+            
+            int contador = 0;
+            try
+            {
+                SqlConnection conexion = BdComun.ObtenerConexion();
+                DataTable dt = new DataTable();
+                SqlCommand consulta = new SqlCommand(string.Format("Select * from tbl_empresas Where nit_empr= "+nit+""), conexion);
+                SqlDataAdapter dr = new SqlDataAdapter(consulta);
+                dr.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    contador++;
+                }
+                conexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('No se pudo consultar la BD');</script>");
+
+            }
+
+            return contador;
+        }
+
         protected void Btn_GuardarEmpresa_Click(object sender, EventArgs e)
         {
-            int clave = rdn.Next(10000000, 90000000);
-            int rol = DDL_rol.SelectedIndex;
-            rol = rol + 1;
-            string estado = "Activo";
-            string sexo = "";
-
-            int n = 0;
-            do
+            if (validarEmpresa(Convert.ToInt32(TB_Nit.Text)) == 0)
             {
-                if (DDL_Sexo.SelectedIndex > 0)
-                {
-                    switch (int.Parse(DDL_Sexo.SelectedValue))
-                    {
-                        case 1:
-                            sexo = "Masculino";
-                            break;
-                        case 2:
-                            sexo = "Femenino";
-                            break;
-                    }
-                }
-                else
-                {
-                    string script = "alert('Seleccione Sexo ...');";
-                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
-                    return;
-                }
-            } while (n < 0);
 
-            string perfil = "";
-            int m = 0;
-            do
-            {
-                if (DDL_rol.SelectedIndex > 0)
-                {
-                    switch (int.Parse(DDL_rol.SelectedValue))
-                    {
-                        case 1:
-                            perfil = "Empresa";
-                            break;
-                        case 2:
-                            perfil = "Mantenimiento";
-                            break;
-                        case 3:
-                            perfil = "Arrendador";
-                            break;
-                    }
-                }
-                else
-                {
-                    string script = "alert('Seleccione un ROL ...');";
-                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
-                    return;
-                }
-            } while (m < 0);
+                int clave = rdn.Next(10000000, 90000000);
+                int rol = DDL_rol.SelectedIndex;
+                rol = rol + 1;
+                string estado = "Activo";
+                string sexo = "";
 
-            insertarEmpresa(TB_Usuario.Text, clave, estado, rol, TB_Nombre.Text, sexo, TB_Correo.Text,perfil,Convert.ToInt32(TB_Nit.Text),TB_NombreEmpresa.Text);
+                int n = 0;
+                do
+                {
+                    if (DDL_Sexo.SelectedIndex > 0)
+                    {
+                        switch (int.Parse(DDL_Sexo.SelectedValue))
+                        {
+                            case 1:
+                                sexo = "Masculino";
+                                break;
+                            case 2:
+                                sexo = "Femenino";
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        string script = "alert('Seleccione Sexo ...');";
+                        ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+                        return;
+                    }
+                } while (n < 0);
+
+                string perfil = "";
+                int m = 0;
+                do
+                {
+                    if (DDL_rol.SelectedIndex > 0)
+                    {
+                        switch (int.Parse(DDL_rol.SelectedValue))
+                        {
+                            case 1:
+                                perfil = "Empresa";
+                                break;
+                            case 2:
+                                perfil = "Mantenimiento";
+                                break;
+                            case 3:
+                                perfil = "Arrendador";
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        string script = "alert('Seleccione un ROL ...');";
+                        ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+                        return;
+                    }
+                } while (m < 0);
+
+                insertarEmpresa(TB_Usuario.Text, clave, estado, rol, TB_Nombre.Text, sexo, TB_Correo.Text, perfil, Convert.ToInt32(TB_Nit.Text), TB_NombreEmpresa.Text);
+            }
+            else {
+                string script = "alert('Nit ya usado  ...');";
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+                return;
+            }
         }
     }
 }

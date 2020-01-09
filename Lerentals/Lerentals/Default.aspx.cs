@@ -18,7 +18,7 @@ namespace Lerentals
             BdComun.ObtenerConexion();
 
             this.tipo_inmueble.Text = Session["tipo_inmueble"].ToString();
-            this.tipo_actividad.Text = Session["tipo_actividad"].ToString();
+            this.tipo_actividad.Text =Session["tipo_actividad"].ToString();
             this.proyecto_cuidad.Text = Session["proyecto_cuidad"].ToString();
 
             SqlConnection conexion = BdComun.ObtenerConexion();
