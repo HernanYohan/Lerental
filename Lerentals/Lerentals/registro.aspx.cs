@@ -6,36 +6,47 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
+using System.Net.Mail;
+using System.Net;
 
 namespace Lerentals
 {
+   
+     
     public partial class registro : System.Web.UI.Page
     {
+        int contra;
+        int claveEmpresa;
         Random rdn = new Random();
         
-
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         protected void BT_Inico_Click1(object sender, EventArgs e)
         {
             Response.Redirect("index.aspx");
+          
         }
 
         protected void Btn_Guardar_Click(object sender, EventArgs e)
         {
+            RF_Empresa2.Visible = false;
+            RF_Nit2.Visible = false;
+
             if (validarUsuario(TB_Usuario.Text) == 0)
             {
-
-                int clave = rdn.Next(10000000, 90000000);
+               
+                int clave = rdn.Next(1000000, 9000000);
+                contra = clave;
                 int rol = DDL_rol.SelectedIndex;
                 rol = rol + 1;
                 string estado = "Activo";
                 int nit = 0;
                 string sexo = "";
-
+                
                 int n = 0;
                 do
                 {
@@ -88,6 +99,11 @@ namespace Lerentals
 
 
                 insertarUsuario(TB_Usuario.Text, clave, estado, rol, TB_Nombre.Text, nit, sexo, TB_Correo.Text, perfil);
+
+
+               
+                SendMail(TB_Correo.Text,TB_Nombre.Text,TB_Usuario.Text);
+
             }
             else {
                 string script = "alert('El nombre de Usuario ya ha sido utilizado ...');";
@@ -104,7 +120,7 @@ namespace Lerentals
             do
             {
 
-                Session["estado"] = DDL_rol.SelectedValue;
+                Session["estado1"] = DDL_rol.SelectedValue;
 
                 switch (int.Parse(DDL_rol.SelectedValue))
                 {
@@ -145,7 +161,7 @@ namespace Lerentals
             
             string salida = "se inserto";
             ClientScriptManager cm = this.ClientScript;
-
+            
             try
             {
                 SqlConnection conexion = BdComun.ObtenerConexion();
@@ -162,7 +178,7 @@ namespace Lerentals
         }
 
 
-        public string insertarEmpresa(string usuario, int clave, string estado, int rol, string nombre, string sexo, string correo,string perfil,int nit,string nombreEmpresa)
+        public string insertarEmpresa(string usuario, int clave, string estado, int rol, string nombre, string sexo, string correo,string perfil,Int64 nit,string nombreEmpresa)
         {
 
             ClientScriptManager cm = this.ClientScript;
@@ -180,13 +196,13 @@ namespace Lerentals
             }
             catch (Exception ex)
             {
-                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('No se pudo registrar');</script>");
+                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('No se pudo registrar usuario ni empresa');</script>");
             }
 
             return salida;
         }
 
-        public int validarEmpresa(int nit, string nombreEmpresa)
+        public int validarEmpresa(Int64 nit, string nombreEmpresa)
         {
             
             ClientScriptManager cm = this.ClientScript;
@@ -203,21 +219,10 @@ namespace Lerentals
                 }
                 dr.Close();
 
-                //SqlConnection conexion = BdComun.ObtenerConexion();
-                //DataTable dt = new DataTable();
-                //SqlCommand consulta = new SqlCommand(string.Format("Select * from tbl_empresas Where (nit_empr= "+nit+ ") or (empr_name = '" + nombreEmpresa + "' ) "), conexion);
-                //SqlDataAdapter dr = new SqlDataAdapter(consulta);
-                //dr.Fill(dt);
-                //if (dt.Rows.Count > 0)
-                //{
-                //    contador++;
-                //}
-                //conexion.Close();
-
             }
             catch (Exception ex)
             {
-                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('No se pudo consultar la BD');</script>");
+                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('No se pudo consultar la BD !!!');</script>");
 
             }
 
@@ -266,10 +271,11 @@ namespace Lerentals
         {
             if (validarUsuario(TB_Usuario.Text) == 0)
             {
-                if (validarEmpresa(Convert.ToInt32(TB_Nit.Text), TB_NombreEmpresa.Text) == 0)
+                if (validarEmpresa(Convert.ToInt64(TB_Nit.Text), TB_NombreEmpresa.Text) == 0)
                 {
-
-                    int clave = rdn.Next(10000000, 90000000);
+                    
+                    int clave = rdn.Next(1000000, 9000000);
+                    claveEmpresa = clave;
                     int rol = DDL_rol.SelectedIndex;
                     rol = rol + 1;
                     string estado = "Activo";
@@ -325,7 +331,9 @@ namespace Lerentals
                         }
                     } while (m < 0);
 
-                    insertarEmpresa(TB_Usuario.Text, clave, estado, rol, TB_Nombre.Text, sexo, TB_Correo.Text, perfil, Convert.ToInt32(TB_Nit.Text), TB_NombreEmpresa.Text);
+                    insertarEmpresa(TB_Usuario.Text, clave, estado, rol, TB_Nombre.Text, sexo, TB_Correo.Text, perfil, Convert.ToInt64(TB_Nit.Text), TB_NombreEmpresa.Text);
+
+                    SendMailEmpresa(TB_Correo.Text, TB_Nombre.Text, TB_Usuario.Text);
                 }
                 else
                 {
@@ -345,7 +353,100 @@ namespace Lerentals
 
         protected void TB_NombreEmpresa_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
+        public string SendMail(string toList, string nombre, string usuario)
+        {   
+
+            MailMessage message = new MailMessage();
+            SmtpClient smtpClient = new SmtpClient();
+
+            nombre = TB_Nombre.Text;
+            usuario = TB_Usuario.Text;
+            toList = TB_Correo.Text;
+            
+            string msg = string.Empty;
+            string subject = "Activacion de creacion de cuenta IeRental";
+            string body = "Hola " + nombre + ", nos permitimos informarte que se ha creado tu cuenta en IeRental, las credenciales para acceder a la aplicacion son, <br /> "
+               + " Usuario: " + usuario
+               + "<br />Contraseña : " + contra 
+               + "<br />Atentamente Grupo IeRental  "
+               + "<br />Si tienes algun problema te puedes comunicar al siquiente correo soporteierental@gmail.com ";
+            string ccList = "hernanyohh@hotmail.com";
+            string from = "software@ciproba.com";
+
+            try
+            {
+                MailAddress fromAddress = new MailAddress(from);
+                message.From = fromAddress;
+                message.To.Add(toList);
+                if (ccList != null && ccList != string.Empty)
+                    message.CC.Add(ccList);
+                    message.Subject = subject;
+                    message.IsBodyHtml = true;
+                    message.Body = body;
+                    smtpClient.Host = "smtp.gmail.com";   // We use gmail as our smtp client
+                    smtpClient.Port = 587;
+                    smtpClient.EnableSsl = true;
+                    smtpClient.UseDefaultCredentials = true;
+                    smtpClient.Credentials = new System.Net.NetworkCredential("software@ciproba.com", "Software2020**");
+
+                    smtpClient.Send(message);
+                    msg = "Successful<BR>";
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
+            return msg;
+        }
+
+        public string SendMailEmpresa(string toList, string nombre, string usuario)
+        {
+
+            MailMessage message = new MailMessage();
+            SmtpClient smtpClient = new SmtpClient();
+
+            nombre = TB_Nombre.Text;
+            usuario = TB_Usuario.Text;
+            toList = TB_Correo.Text;
+
+            string msg = string.Empty;
+            string subject = "Activacion de creacion de cuenta IeRental";
+            string body = "Hola " + nombre + ", nos permitimos informarte que se ha creado tu cuenta en IeRental, las credenciales para acceder a la aplicacion son, <br /> "
+               + " Usuario: " + usuario
+               + "<br />Contraseña : " + claveEmpresa
+               + "<br />Atentamente Grupo IeRental  "
+               + "<br />Si tienes algun problema te puedes comunicar al siquiente correo soporteierental@gmail.com ";
+            string ccList = "hernanyohh@hotmail.com";
+            string from = "software@ciproba.com";
+
+            try
+            {
+                MailAddress fromAddress = new MailAddress(from);
+                message.From = fromAddress;
+                message.To.Add(toList);
+                if (ccList != null && ccList != string.Empty)
+                    message.CC.Add(ccList);
+                message.Subject = subject;
+                message.IsBodyHtml = true;
+                message.Body = body;
+                smtpClient.Host = "smtp.gmail.com";   // We use gmail as our smtp client
+                smtpClient.Port = 587;
+                smtpClient.EnableSsl = true;
+                smtpClient.UseDefaultCredentials = true;
+                smtpClient.Credentials = new System.Net.NetworkCredential("software@ciproba.com", "Software2020**");
+
+                smtpClient.Send(message);
+                msg = "Successful<BR>";
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
+            return msg;
+        }
+
+
     }
 }

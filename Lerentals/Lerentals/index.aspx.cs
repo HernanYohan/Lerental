@@ -44,7 +44,8 @@ namespace Lerentals
             }
         }
 
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+     
+        protected void BTN_Registrarse_Click1(object sender, EventArgs e)
         {
             Response.Redirect("registro.aspx");
         }

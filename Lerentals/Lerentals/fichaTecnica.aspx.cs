@@ -20,8 +20,8 @@ namespace Lerentals
 
         private void LoadImage()
         {
-            this.proyecto_cuidad.Text = "Bogota DC";//Session["proyecto_cuidad"].ToString();
-            String imagenes = "13";// Session["ruta"].ToString();
+            this.proyecto_cuidad.Text = Session["proyecto_cuidad"].ToString();
+            String imagenes =  Session["ruta"].ToString();
             try
             {
 
