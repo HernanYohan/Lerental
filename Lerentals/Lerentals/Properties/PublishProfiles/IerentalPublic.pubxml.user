@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\1</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>12/10/2019 12:38:47</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>12/10/2019 12:38:47</publishTime>
+    </File>
+    <File Include="bin/Lerentals.dll">
+      <publishTime>01/13/2020 16:54:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="contactform/contactform.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="contactform/Readme.txt">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="css/flexslider.css">
+      <publishTime>12/23/2019 11:01:30</publishTime>
+    </File>
+    <File Include="css/images/bg_direction_nav.png">
+      <publishTime>01/12/2013 14:09:40</publishTime>
+    </File>
+    <File Include="css/scss-files.txt">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>12/17/2019 14:18:45</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>12/17/2019 14:49:09</publishTime>
+    </File>
+    <File Include="fichaTecnica.aspx">
+      <publishTime>12/23/2019 11:26:36</publishTime>
+    </File>
+    <File Include="img/cover.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/gadgets.png">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/logo-nav.png">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/logo.png">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/parallax-bg.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/porf-1.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/porf-2.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/porf-3.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/porf-4.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/porf-5.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/porf-6.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/porf-7.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/porf-8.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/Registrarse.jpg">
+      <publishTime>12/23/2019 13:45:42</publishTime>
+    </File>
+    <File Include="img/team-1.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/team-2.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/team-3.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="img/team-4.jpg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>01/09/2020 16:15:04</publishTime>
+    </File>
+    <File Include="js/custom.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="js/jquery-1.8.2-min.js">
+      <publishTime>01/12/2013 13:46:08</publishTime>
+    </File>
+    <File Include="js/jquery.flexslider.js">
+      <publishTime>01/12/2013 13:25:34</publishTime>
+    </File>
+    <File Include="lib/bootstrap/css/bootstrap.css">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/bootstrap/css/bootstrap.min.css">
+      <publishTime>12/20/2019 16:57:17</publishTime>
+    </File>
+    <File Include="lib/bootstrap/js/bootstrap.bundle.min.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/bootstrap/js/bootstrap.min.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/counterup/counterup.min.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/easing/easing.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/easing/easing.min.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/font-awesome/css/font-awesome.css">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/font-awesome/css/font-awesome.min.css">
+      <publishTime>12/20/2019 17:44:30</publishTime>
+    </File>
+    <File Include="lib/font-awesome/fonts/fontawesome-webfont.eot">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/font-awesome/fonts/fontawesome-webfont.svg">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/font-awesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/font-awesome/fonts/fontawesome-webfont.woff">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/font-awesome/fonts/fontawesome-webfont.woff2">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/font-awesome/fonts/FontAwesome.otf">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/jquery/jquery-migrate.min.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/jquery/jquery.min.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/lockfixed/lockfixed.min.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/parallax/parallax.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/stellar/stellar.min.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/stickyjs/sticky.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/superfish/hoverIntent.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/superfish/superfish.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/superfish/superfish.min.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/tether/css/tether-theme-arrows-dark.css">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/tether/css/tether-theme-arrows-dark.min.css">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/tether/css/tether-theme-arrows.css">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/tether/css/tether-theme-arrows.min.css">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/tether/css/tether-theme-basic.css">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/tether/css/tether-theme-basic.min.css">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/tether/css/tether.css">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/tether/css/tether.min.css">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/tether/js/tether.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/tether/js/tether.min.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="lib/waypoints/waypoints.min.js">
+      <publishTime>04/29/2019 21:21:36</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/10/2019 12:38:48</publishTime>
+    </File>
+    <File Include="registro.aspx">
+      <publishTime>01/13/2020 16:47:57</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.js">
+      <publishTime>12/10/2019 12:38:48</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>12/10/2019 12:38:48</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/13/2020 16:51:45</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

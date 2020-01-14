@@ -35,6 +35,7 @@ namespace Lerentals
         {
             RF_Empresa2.Visible = false;
             RF_Nit2.Visible = false;
+            RF_CV.Visible = false;
 
             if (validarUsuario(TB_Usuario.Text) == 0)
             {
@@ -42,11 +43,10 @@ namespace Lerentals
                 int clave = rdn.Next(1000000, 9000000);
                 contra = clave;
                 int rol = DDL_rol.SelectedIndex;
-                rol = rol + 1;
                 string estado = "Activo";
                 int nit = 0;
                 string sexo = "";
-                
+                string cvUsuario = "N/A";
                 int n = 0;
                 do
                 {
@@ -79,13 +79,19 @@ namespace Lerentals
                         switch (int.Parse(DDL_rol.SelectedValue))
                         {
                             case 1:
-                                perfil = "Empresa";
+                                perfil = "Comprador";
                                 break;
                             case 2:
-                                perfil = "Mantenimiento";
+                                perfil = "Vendedor";
                                 break;
                             case 3:
+                                perfil = "Proveedor";
+                                break;
+                            case 4:
                                 perfil = "Arrendador";
+                                break;
+                            case 5:
+                                perfil = "Arrendatario";
                                 break;
                         }
                     }
@@ -97,8 +103,52 @@ namespace Lerentals
                     }
                 } while (m < 0);
 
+                string especialidad = "";
+                if (DDL_rol.SelectedIndex == 3)
+                {
+                    int h = 0;
+                    do
+                    {
+                        if (DDL_Especialidad.SelectedIndex > 0)
+                        {
+                            switch (int.Parse(DDL_Especialidad.SelectedValue))
+                            {
+                                case 1:
+                                    especialidad = "Jardineria";
+                                    break;
+                                case 2:
+                                    especialidad = "Electricista";
+                                    break;
+                                case 3:
+                                    especialidad = "Manposteria";
+                                    break;
+                                case 4:
+                                    especialidad = "Limpieza";
+                                    break;
+                                case 5:
+                                    especialidad = "Plomeria";
+                                    break;
+                                case 6:
+                                    especialidad = "Cerrajeria";
+                                    break;
+                            }
+                        }
+                        else
+                        {
+                            string script = "alert('Seleccione una Especialidad ...');";
+                            ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+                            return;
+                        }
+                    } while (h < 0);
+                }
+                else
+                {
+                    especialidad = "N/A";
+                }
+                
 
-                insertarUsuario(TB_Usuario.Text, clave, estado, rol, TB_Nombre.Text, nit, sexo, TB_Correo.Text, perfil);
+
+                insertarUsuario(TB_Usuario.Text, clave, estado, rol, TB_Nombre.Text, nit, sexo, TB_Correo.Text, perfil,especialidad,cvUsuario);
 
 
                
@@ -120,43 +170,76 @@ namespace Lerentals
             do
             {
 
-                Session["estado1"] = DDL_rol.SelectedValue;
+                Session["estado"] = DDL_rol.SelectedValue;
 
                 switch (int.Parse(DDL_rol.SelectedValue))
                 {
                     case 1:
+                        Label_NombreEmpresa.Visible = false;
+                        TB_NombreEmpresa.Visible = false;
+                        Label_Nit.Visible = false;
+                        TB_Nit.Visible = false;
+                        Label_Especialidad.Visible = false;
+                        DDL_Especialidad.Visible = false;
+                        Label_CV.Visible = false;
+                        TB_CV.Visible = false;
+                        Btn_Guardar.Visible = true;
+                        Btn_GuardarEmpresa.Visible = false;
+
+                        break;
+                    case 2:
                         Label_NombreEmpresa.Visible = true;
                         TB_NombreEmpresa.Visible = true;
                         Label_Nit.Visible = true;
                         TB_Nit.Visible = true;
+                        Label_CV.Visible = true;
+                        TB_CV.Visible = true;
+                        Label_Especialidad.Visible = false;
+                        DDL_Especialidad.Visible = false;
                         Btn_Guardar.Visible = false;
                         Btn_GuardarEmpresa.Visible = true;
-                        break;
-                    case 2:
-                        Label_NombreEmpresa.Visible = false;
-                        TB_NombreEmpresa.Visible = false;
-                        Label_Nit.Visible = false;
-                        TB_Nit.Visible = false;
-                        Btn_Guardar.Visible = true;
-                        Btn_GuardarEmpresa.Visible = false;
                         break;
                     case 3:
                         Label_NombreEmpresa.Visible = false;
                         TB_NombreEmpresa.Visible = false;
+                        Label_Especialidad.Visible = true;
+                        DDL_Especialidad.Visible = true;
                         Label_Nit.Visible = false;
                         TB_Nit.Visible = false;
+                        Label_CV.Visible = false;
+                        TB_CV.Visible = false;
                         Btn_Guardar.Visible = true;
                         Btn_GuardarEmpresa.Visible = false;
-
+                        break;
+                    case 4:
+                        Label_NombreEmpresa.Visible = false;
+                        TB_NombreEmpresa.Visible = false;
+                        Label_Nit.Visible = false;
+                        TB_Nit.Visible = false;
+                        Label_CV.Visible = false;
+                        TB_CV.Visible = false;
+                        Label_Especialidad.Visible = false;
+                        DDL_Especialidad.Visible = false;
+                        Btn_Guardar.Visible = true;
+                        Btn_GuardarEmpresa.Visible = false;
+                        break;
+                    case 5:
+                        Label_NombreEmpresa.Visible = false;
+                        TB_NombreEmpresa.Visible = false;
+                        Label_Nit.Visible = false;
+                        TB_Nit.Visible = false;
+                        Label_CV.Visible = false;
+                        TB_CV.Visible = false;
+                        Label_Especialidad.Visible = false;
+                        DDL_Especialidad.Visible = false;
+                        Btn_Guardar.Visible = true;
+                        Btn_GuardarEmpresa.Visible = false;
                         break;
                 }
-
             } while (n < 0);
-
-
         }
 
-        public string insertarUsuario( string usuario,int clave, string estado,int rol, string nombre,int nit,string sexo, string correo, string perfil)
+        public string insertarUsuario( string usuario,int clave, string estado,int rol, string nombre,int nit,string sexo, string correo, string perfil, string especialidad, string cvUsu)
         {
             
             string salida = "se inserto";
@@ -165,10 +248,9 @@ namespace Lerentals
             try
             {
                 SqlConnection conexion = BdComun.ObtenerConexion();
-                SqlCommand consulta = new SqlCommand(string.Format("insert into tbl_usuarios(user_login,user_pass,user_stat,perfil_id,user_name,nit_empr,user_sexo,user_mail,perfil)values('" + usuario+"',"+clave+",'"+estado+"',"+rol+",'"+nombre+"',"+nit+",'"+sexo+"','"+correo+"','"+perfil+"')"), conexion);
+                SqlCommand consulta = new SqlCommand(string.Format("insert into tbl_usuarios(user_login,user_pass,user_stat,perfil_id,user_name,nit_empr,user_sexo,user_mail,perfil,especialidad,CV)values('" + usuario+"',"+clave+",'"+estado+"',"+rol+",'"+nombre+"',"+nit+",'"+sexo+"','"+correo+"','"+perfil+ "','" + especialidad + "','" + cvUsu + "')"), conexion);
                 consulta.ExecuteNonQuery();
-                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('Regitrado correctamente');window.location=\"index.aspx\"</script>");
-                
+                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('Regitrado correctamente');window.location=\"index.aspx\"</script>");   
             }
             catch(Exception ex) {
                 cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('No se pudo registrar');</script>");
@@ -176,9 +258,8 @@ namespace Lerentals
             
             return salida;
         }
-
-
-        public string insertarEmpresa(string usuario, int clave, string estado, int rol, string nombre, string sexo, string correo,string perfil,Int64 nit,string nombreEmpresa)
+        
+        public string insertarEmpresa(string usuario, int clave, string estado, int rol, string nombre, string sexo, string correo,string perfil,Int64 nit,string nombreEmpresa,string especialidad, string cvEmpresa)
         {
 
             ClientScriptManager cm = this.ClientScript;
@@ -186,13 +267,11 @@ namespace Lerentals
             string salida = "se inserto";
             try
             {
-                SqlCommand consulta = new SqlCommand(string.Format("insert into tbl_usuarios(user_login,user_pass,user_stat,perfil_id,user_name,nit_empr,user_sexo,user_mail,perfil)values('" + usuario + "'," + clave + ",'" + estado + "'," + rol + ",'" + nombre + "',"+nit+",'" + sexo + "','" + correo + "','"+perfil+"')"), conexion);
+                SqlCommand consulta = new SqlCommand(string.Format("insert into tbl_usuarios(user_login,user_pass,user_stat,perfil_id,user_name,nit_empr,user_sexo,user_mail,perfil,especialidad,CV)values('" + usuario + "'," + clave + ",'" + estado + "'," + rol + ",'" + nombre + "',"+nit+",'" + sexo + "','" + correo + "','"+perfil+ "','" + especialidad + "','" + cvEmpresa + "')"), conexion);
                 consulta.ExecuteNonQuery();
-                SqlCommand consultaEmpresa = new SqlCommand(string.Format("insert into tbl_empresas(nit_empr,empr_name,empr_stat)values(" + nit + ",'"+nombreEmpresa+"','"+estado+"')"), conexion);
+                SqlCommand consultaEmpresa = new SqlCommand(string.Format("insert into tbl_empresas(nit_empr,empr_name,empr_stat,empr_cv)values(" + nit + ",'"+nombreEmpresa+"','"+estado+ "','" + cvEmpresa + "')"), conexion);
                 consultaEmpresa.ExecuteNonQuery();
                 cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('Regitrado correctamente');window.location=\"index.aspx\"</script>");
-
-                //SqlDataAdapter da = new SqlDataAdapter(consulta);
             }
             catch (Exception ex)
             {
@@ -201,7 +280,6 @@ namespace Lerentals
 
             return salida;
         }
-
         public int validarEmpresa(Int64 nit, string nombreEmpresa)
         {
             
@@ -271,76 +349,110 @@ namespace Lerentals
         {
             if (validarUsuario(TB_Usuario.Text) == 0)
             {
-                if (validarEmpresa(Convert.ToInt64(TB_Nit.Text), TB_NombreEmpresa.Text) == 0)
+                string nitTxt = TB_Nit.Text;
+
+                if (nitTxt.Length > 6 && nitTxt.Length < 10)
                 {
-                    
-                    int clave = rdn.Next(1000000, 9000000);
-                    claveEmpresa = clave;
-                    int rol = DDL_rol.SelectedIndex;
-                    rol = rol + 1;
-                    string estado = "Activo";
-                    string sexo = "";
 
-                    int n = 0;
-                    do
+                    string cvTxt = TB_CV.Text;
+
+                    if (cvTxt.Length == 1)
                     {
-                        if (DDL_Sexo.SelectedIndex > 0)
+
+
+                        Int64 nit = Convert.ToInt64(TB_Nit.Text);
+                        if (validarEmpresa(nit, TB_NombreEmpresa.Text) == 0)
                         {
-                            switch (int.Parse(DDL_Sexo.SelectedValue))
+
+                            int clave = rdn.Next(1000000, 9000000);
+                            claveEmpresa = clave;
+                            int rol = DDL_rol.SelectedIndex;
+                            string estado = "Activo";
+                            string sexo = "";
+                            string especialidadEmpresa = "N/A";
+                            nit = Convert.ToInt64(TB_Nit.Text);
+
+                            int n = 0;
+                            do
                             {
-                                case 1:
-                                    sexo = "Masculino";
-                                    break;
-                                case 2:
-                                    sexo = "Femenino";
-                                    break;
-                            }
+                                if (DDL_Sexo.SelectedIndex > 0)
+                                {
+                                    switch (int.Parse(DDL_Sexo.SelectedValue))
+                                    {
+                                        case 1:
+                                            sexo = "Masculino";
+                                            break;
+                                        case 2:
+                                            sexo = "Femenino";
+                                            break;
+                                    }
+                                }
+                                else
+                                {
+                                    string script = "alert('Seleccione Sexo ...');";
+                                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+                                    return;
+                                }
+                            } while (n < 0);
+
+                            string perfil = "";
+                            int m = 0;
+                            do
+                            {
+                                if (DDL_rol.SelectedIndex > 0)
+                                {
+                                    switch (int.Parse(DDL_rol.SelectedValue))
+                                    {
+                                        case 1:
+                                            perfil = "Comprador";
+                                            break;
+                                        case 2:
+                                            perfil = "Vendedor";
+                                            break;
+                                        case 3:
+                                            perfil = "Mantenimiento";
+                                            break;
+                                        case 4:
+                                            perfil = "Arrendador";
+                                            break;
+                                        case 5:
+                                            perfil = "Arrendatario";
+                                            break;
+                                    }
+                                }
+                                else
+                                {
+                                    string script = "alert('Seleccione un ROL ...');";
+                                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+                                    return;
+                                }
+                            } while (m < 0);
+
+                            insertarEmpresa(TB_Usuario.Text, clave, estado, rol, TB_Nombre.Text, sexo, TB_Correo.Text, perfil, nit, TB_NombreEmpresa.Text, especialidadEmpresa,TB_CV.Text);
+
+                            SendMailEmpresa(TB_Correo.Text, TB_Nombre.Text, TB_Usuario.Text);
                         }
                         else
                         {
-                            string script = "alert('Seleccione Sexo ...');";
+                            string script = "alert('Nit o Nombre de la empresa ya registrado  ...');";
                             ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
                             return;
                         }
-                    } while (n < 0);
-
-                    string perfil = "";
-                    int m = 0;
-                    do
+                    }
+                    else
                     {
-                        if (DDL_rol.SelectedIndex > 0)
-                        {
-                            switch (int.Parse(DDL_rol.SelectedValue))
-                            {
-                                case 1:
-                                    perfil = "Empresa";
-                                    break;
-                                case 2:
-                                    perfil = "Mantenimiento";
-                                    break;
-                                case 3:
-                                    perfil = "Arrendador";
-                                    break;
-                            }
-                        }
-                        else
-                        {
-                            string script = "alert('Seleccione un ROL ...');";
-                            ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
-                            return;
-                        }
-                    } while (m < 0);
-
-                    insertarEmpresa(TB_Usuario.Text, clave, estado, rol, TB_Nombre.Text, sexo, TB_Correo.Text, perfil, Convert.ToInt64(TB_Nit.Text), TB_NombreEmpresa.Text);
-
-                    SendMailEmpresa(TB_Correo.Text, TB_Nombre.Text, TB_Usuario.Text);
+                        string script = "alert('CV: Solo un caracter');";
+                        ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+                        return;
+                    }
                 }
                 else
                 {
-                    string script = "alert('Nit o Nombre de la empresa ya registrado  ...');";
+                    string script = "alert('Numeros para el Nit entre 10000000 y 999999999');";
                     ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
                     return;
                 }
+
 
             }
             else

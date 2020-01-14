@@ -40,6 +40,24 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.DropDownList DDL_rol;
         
         /// <summary>
+        /// Label_Especialidad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Especialidad;
+        
+        /// <summary>
+        /// DDL_Especialidad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_Especialidad;
+        
+        /// <summary>
         /// Label_Nombre control.
         /// </summary>
         /// <remarks>
@@ -209,6 +227,33 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_Nit2;
+        
+        /// <summary>
+        /// Label_CV control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_CV;
+        
+        /// <summary>
+        /// TB_CV control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TB_CV;
+        
+        /// <summary>
+        /// RF_CV control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RF_CV;
         
         /// <summary>
         /// Btn_Guardar control.

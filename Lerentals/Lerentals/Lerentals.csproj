@@ -107,6 +107,7 @@
     <Content Include="lib\font-awesome\fonts\fontawesome-webfont.woff" />
     <Content Include="lib\font-awesome\fonts\fontawesome-webfont.woff2" />
     <Content Include="lib\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\IerentalPublic.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -174,15 +175,6 @@
     <Content Include="lib\waypoints\waypoints.min.js" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="Upload\BannerImage\261539_378844132204441_1809997127_n.jpg" />
-    <Content Include="Upload\BannerImage\bannerImage1.jpg" />
-    <Content Include="Upload\BannerImage\bannerImage2.jpg" />
-    <Content Include="Upload\BannerImage\bannerImage3.jpg" />
-    <Content Include="Upload\BannerImage\Best-top-funny-wallpapers-humor-wallpaper-pictures-backgrounds-06.jpg" />
-    <Content Include="Upload\BannerImage\Best-top-funny-wallpapers-humor-wallpaper-pictures-backgrounds-17.jpg" />
-    <Content Include="Upload\BannerImage\Best-top-funny-wallpapers-humor-wallpaper-pictures-backgrounds-25.jpg" />
-    <Content Include="Upload\BannerImage\chip_pack_by_iteppo-d3kd8ar.jpg" />
-    <Content Include="Upload\BannerImage\colima-volcano-with-Beautiful-Scenary.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -217,7 +209,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Upload\BannerImage\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
