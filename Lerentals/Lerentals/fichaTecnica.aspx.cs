@@ -60,7 +60,10 @@ namespace Lerentals
 
             if (registro.Read())
             {
-                L_Valor.Text = registro["valo_inmueble"].ToString();
+                string moneda = registro["valo_inmueble"].ToString();
+                double numero = Convert.ToDouble(moneda);            
+                L_Valor.Text = numero.ToString("N0");
+              
                 L_moneda.Text = registro["moneda"].ToString();
                 L_Direccion.Text = registro["Proyecto_dire"].ToString();
                 L_DireccionDes.Text = registro["proyecto_desc"].ToString();
@@ -69,12 +72,6 @@ namespace Lerentals
                 L_Mts2.Text = registro["mts2"].ToString();
                 L_habitaciones.Text = registro["rooms"].ToString();
                 L_baños.Text = registro["baths"].ToString();
-
-                //        String moneda = registro["valo_inmueble"].ToString();
-
-                //        L_Valor.Text = String.Format("{0:G2}", moneda);
-
-                //        // this.L_Valor.Text = Format(Val(Replace(this..Text, ",", "")), "#,###,###");
 
 
                 //        //L_Construido.Text = registro["construido"].ToString();
@@ -420,5 +417,7 @@ namespace Lerentals
         {
             Response.Redirect("Default.aspx");
         }
+
+
     }
 }

@@ -30,3 +30,4 @@ C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.A
 C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\obj\Release\Lerentals.dll
 C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\obj\Release\Lerentals.pdb
+C:\Users\Hernan\Desktop\GitLerental\Lerental\Lerentals\Lerentals\obj\Release\Lerentals.csprojResolveAssemblyReference.cache

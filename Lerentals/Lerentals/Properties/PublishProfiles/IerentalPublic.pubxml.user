@@ -16,7 +16,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/10/2019 12:38:47</publishTime>
     </File>
     <File Include="bin/Lerentals.dll">
-      <publishTime>01/13/2020 16:54:19</publishTime>
+      <publishTime>01/14/2020 16:11:33</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>12/07/2015 19:04:38</publishTime>
@@ -277,7 +277,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/10/2019 12:38:48</publishTime>
     </File>
     <File Include="registro.aspx">
-      <publishTime>01/13/2020 16:47:57</publishTime>
+      <publishTime>01/14/2020 16:04:16</publishTime>
     </File>
     <File Include="scripts/ai.0.22.9-build00167.js">
       <publishTime>12/10/2019 12:38:48</publishTime>

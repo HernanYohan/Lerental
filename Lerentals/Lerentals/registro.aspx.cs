@@ -481,7 +481,8 @@ namespace Lerentals
             string subject = "Activacion de creacion de cuenta IeRental";
             string body = "Hola " + nombre + ", nos permitimos informarte que se ha creado tu cuenta en IeRental, las credenciales para acceder a la aplicacion son, <br /> "
                + " Usuario: " + usuario
-               + "<br />Contraseña : " + contra 
+               + "<br />Contraseña : " + contra
+               + "<br />Para acceder a nuestro aplicacion ingresa al siguiente link  ierental.gearhostpreview.com  "
                + "<br />Atentamente Grupo IeRental  "
                + "<br />Si tienes algun problema te puedes comunicar al siquiente correo soporteierental@gmail.com ";
             string ccList = "hernanyohh@hotmail.com";
@@ -528,6 +529,7 @@ namespace Lerentals
             string body = "Hola " + nombre + ", nos permitimos informarte que se ha creado tu cuenta en IeRental, las credenciales para acceder a la aplicacion son, <br /> "
                + " Usuario: " + usuario
                + "<br />Contraseña : " + claveEmpresa
+               + "<br />Para acceder a nuestro aplicacion ingresa al siguiente link  ierental.gearhostpreview.com  "
                + "<br />Atentamente Grupo IeRental  "
                + "<br />Si tienes algun problema te puedes comunicar al siquiente correo soporteierental@gmail.com ";
             string ccList = "hernanyohh@hotmail.com";

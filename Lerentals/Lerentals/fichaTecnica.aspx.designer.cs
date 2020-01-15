@@ -85,6 +85,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.Label L_Valor;
         
         /// <summary>
+        /// Imag_moneda control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Imag_moneda;
+        
+        /// <summary>
         /// Label_Moneda control.
         /// </summary>
         /// <remarks>
@@ -103,6 +112,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.Label L_moneda;
         
         /// <summary>
+        /// Img_Mts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_Mts;
+        
+        /// <summary>
         /// Label_Mts2 control.
         /// </summary>
         /// <remarks>
@@ -119,6 +137,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label L_Mts2;
+        
+        /// <summary>
+        /// Img_habitaciones control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_habitaciones;
         
         /// <summary>
         /// Label_Habitaciones control.
@@ -166,6 +193,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Garaje;
         
         /// <summary>
+        /// Label_Garaje control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Garaje;
+        
+        /// <summary>
         /// CB_SalaJuego control.
         /// </summary>
         /// <remarks>
@@ -173,6 +209,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CB_SalaJuego;
+        
+        /// <summary>
+        /// Label_Saladejuegos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Saladejuegos;
         
         /// <summary>
         /// CB_Caldera control.
@@ -184,6 +229,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Caldera;
         
         /// <summary>
+        /// Label_caldera control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_caldera;
+        
+        /// <summary>
         /// CB_ZonaBBQ control.
         /// </summary>
         /// <remarks>
@@ -191,6 +245,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CB_ZonaBBQ;
+        
+        /// <summary>
+        /// Label_ZonaBBQ control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_ZonaBBQ;
         
         /// <summary>
         /// CB_RedIncendio control.
@@ -202,6 +265,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_RedIncendio;
         
         /// <summary>
+        /// Label_RedIncendio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_RedIncendio;
+        
+        /// <summary>
         /// CB_SalaEstar control.
         /// </summary>
         /// <remarks>
@@ -209,6 +281,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CB_SalaEstar;
+        
+        /// <summary>
+        /// img_SalaEstar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image img_SalaEstar;
         
         /// <summary>
         /// Label_SalaEstar control.
@@ -229,6 +310,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Electrogeno;
         
         /// <summary>
+        /// img_electrogeno control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image img_electrogeno;
+        
+        /// <summary>
         /// Label_Electrogeno control.
         /// </summary>
         /// <remarks>
@@ -247,6 +337,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Cine;
         
         /// <summary>
+        /// Label_Cine control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Cine;
+        
+        /// <summary>
         /// CB_Piscina control.
         /// </summary>
         /// <remarks>
@@ -254,6 +353,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CB_Piscina;
+        
+        /// <summary>
+        /// Img_piscina control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_piscina;
         
         /// <summary>
         /// Label_Piscina control.
@@ -274,6 +382,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Hipoteca;
         
         /// <summary>
+        /// Imh_Hipoteca control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Imh_Hipoteca;
+        
+        /// <summary>
         /// Label_Hipoteca control.
         /// </summary>
         /// <remarks>
@@ -290,6 +407,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CB_Sauna;
+        
+        /// <summary>
+        /// Img_Sauna control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_Sauna;
         
         /// <summary>
         /// Label_Sauna control.
@@ -310,6 +436,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_SalonEventos;
         
         /// <summary>
+        /// img_salonEventos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image img_salonEventos;
+        
+        /// <summary>
         /// Label_SalonEventos control.
         /// </summary>
         /// <remarks>
@@ -326,6 +461,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CB_SalonMultiuso;
+        
+        /// <summary>
+        /// Img_SalonMultiuso control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_SalonMultiuso;
         
         /// <summary>
         /// Label_SalonMiltiuso control.
@@ -346,6 +490,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Escaleras;
         
         /// <summary>
+        /// Img_escaleras control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_escaleras;
+        
+        /// <summary>
         /// Label_Escaleras control.
         /// </summary>
         /// <remarks>
@@ -362,6 +515,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CB_Portones;
+        
+        /// <summary>
+        /// Img_portones control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_portones;
         
         /// <summary>
         /// Label_Portones control.
@@ -382,6 +544,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Guardia;
         
         /// <summary>
+        /// Img_guardia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_guardia;
+        
+        /// <summary>
         /// Label_Guardia control.
         /// </summary>
         /// <remarks>
@@ -398,6 +569,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CB_Hall;
+        
+        /// <summary>
+        /// Img_Hall control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_Hall;
         
         /// <summary>
         /// Label_Hall control.
@@ -418,6 +598,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Tenis;
         
         /// <summary>
+        /// Img_Tenis control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_Tenis;
+        
+        /// <summary>
         /// Tenis control.
         /// </summary>
         /// <remarks>
@@ -434,6 +623,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CB_Squash;
+        
+        /// <summary>
+        /// Img_Squas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_Squas;
         
         /// <summary>
         /// LabelSquash control.
@@ -454,6 +652,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Gym;
         
         /// <summary>
+        /// Img_gym control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_gym;
+        
+        /// <summary>
         /// Label_Gym control.
         /// </summary>
         /// <remarks>
@@ -470,6 +677,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CB_Jardines;
+        
+        /// <summary>
+        /// Img_jardines control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_jardines;
         
         /// <summary>
         /// Label_Jardines control.
@@ -490,6 +706,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Ascensor;
         
         /// <summary>
+        /// Img_ascensor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_ascensor;
+        
+        /// <summary>
         /// Lable_Ascensor control.
         /// </summary>
         /// <remarks>
@@ -508,6 +733,15 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.CheckBox CB_Bodega;
         
         /// <summary>
+        /// Img_bodega control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_bodega;
+        
+        /// <summary>
         /// Label_Bodega control.
         /// </summary>
         /// <remarks>
@@ -524,6 +758,15 @@ namespace Lerentals {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CB_Golf;
+        
+        /// <summary>
+        /// Img_golf control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Img_golf;
         
         /// <summary>
         /// Label_Golf control.

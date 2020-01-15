@@ -95,12 +95,20 @@
                           <asp:ListItem Value="17">Terreno</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td>
+                    <td colspan="2">
                         <asp:DropDownList ID="tipo_actividad" runat="server">
                              <asp:ListItem Selected="True" Value="0">En Venta o Alquiler?</asp:ListItem>
                           <asp:ListItem Value="1">Venta</asp:ListItem>
                           <asp:ListItem Value="2">Alquiler</asp:ListItem>
                           <asp:ListItem Value="3">Alquiler Vacacional</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td colspan="2">
+                        <asp:DropDownList ID="proyecto_pais" runat="server" Width="200px">
+                            <asp:ListItem Value="0">Pais ?</asp:ListItem>
+                            <asp:ListItem Value="1">Colombia</asp:ListItem>
+                            <asp:ListItem Value="2">Venezuela</asp:ListItem>
+                            <asp:ListItem>Peru</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                     <td>
@@ -110,31 +118,31 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>
+                    <td colspan="2">
                         &nbsp;</td>
-                    <td>
+                    <td colspan="2">
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:inmobiliariasConnectionString %>" SelectCommand="SELECT DISTINCT proyecto_cuidad FROM tbl_proyectos"></asp:SqlDataSource>
                     </td>
-                    <td>
+                    <td colspan="2">
                         &nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>
+                    <td colspan="2">
                         &nbsp;</td>
-                    <td>
+                    <td colspan="2">
                         &nbsp;</td>
-                    <td>
+                    <td colspan="2">
                         &nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>
+                    <td colspan="2">
                         &nbsp;</td>
-                    <td>
+                    <td colspan="2">
                         <asp:Button ID="ASPxButton1" class="btn btn-full" runat="server" OnClick="ASPxButton1_Click1" Text="Buscar" Height="57px" Width="183px" />
                     </td>
-                    <td>
+                    <td colspan="2">
                         &nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -148,10 +156,10 @@
   <!-- /Hero -->
 
   <!-- Header -->
-        <%--<a class="btn btn-full" href="#about" id="ASPxButton1">Buscar</a>--%>
+        <%--<asp:ListItem Value="6">Casa Lote</asp:ListItem>--%>
       <!-- #nav-menu-container -->
 
-        <%--<asp:ListItem Value="6">Casa Lote</asp:ListItem>--%>
+        <%--<a class="btn btn-full" href="#about" id="ASPxButton1">Buscar</a>--%>
     </div>
   </header>
   <!-- #header -->
@@ -165,6 +173,10 @@
         <%--<asp:ListItem Value="6">Casa Lote</asp:ListItem>--%>
   <!-- /Parallax -->
   <!-- Features -->
+
+        <%--<asp:ListItem Value="6">Casa Lote</asp:ListItem>--%>
+  <!-- /Features -->
+  <!-- Call to Action -->
 
         <%--<header id="header">
     <div class="container">
@@ -201,14 +213,14 @@
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>--%>
-  <!-- /Features -->
-  <!-- Call to Action -->
+  <!-- /Call to Action -->
+  <!-- Portfolio -->
 
         <%--<nav class="nav social-nav pull-right d-none d-lg-inline">
         <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
       </nav>--%>
-  <!-- /Call to Action -->
-  <!-- Portfolio -->
+  <!-- /Portfolio -->
+  <!-- Team -->
 
         <%--<section class="about" id="about">
     <div class="container text-center">
@@ -248,19 +260,6 @@
       </div>
     </div>
   </section>--%>
-  <!-- /Portfolio -->
-  <!-- Team -->
-
-        <%--<div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
-    <h2>
-        Welcome to a perfect theme
-      </h2>
-
-    <p>
-      This is the most powerful theme with thousands of options that you have never seen before.
-    </p>
-    <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png">
-  </div>--%>
   <!-- /Team -->
   <!-- @component: footer -->
 

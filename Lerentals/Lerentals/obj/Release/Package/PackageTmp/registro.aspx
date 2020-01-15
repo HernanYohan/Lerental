@@ -282,9 +282,11 @@
                               <td colspan="5">
                                   <asp:DropDownList ID="DDL_rol" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True" Width="180px">
                                       <asp:ListItem Value="0">Seleccione</asp:ListItem>
-                                      <asp:ListItem Value="1">Empresa</asp:ListItem>
-                                      <asp:ListItem Value="2">Mantenimiento</asp:ListItem>
-                                      <asp:ListItem Value="3">Arrendador</asp:ListItem>
+                                      <asp:ListItem Value="1">Comprador</asp:ListItem>
+<asp:ListItem Value="2">Vendedor</asp:ListItem>
+                                      <asp:ListItem Value="3">Proveedor</asp:ListItem>
+                                      <asp:ListItem Value="4">Arrendador</asp:ListItem>
+                                      <asp:ListItem Value="5">Arrendatario</asp:ListItem>
                                   </asp:DropDownList>
                               </td>
                               <td class="auto-style16">
@@ -295,8 +297,37 @@
                                   &nbsp;</td>
                               <td class="auto-style24">
                                   &nbsp;</td>
-                              <td colspan="8">
+                              <td>
                                   &nbsp;</td>
+                              <td colspan="2">
+                                  &nbsp;</td>
+                              <td colspan="5">
+                                  &nbsp;</td>
+                              <td class="auto-style16">
+                                  &nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td class="auto-style15">
+                                  &nbsp;</td>
+                              <td class="auto-style24">
+                                  &nbsp;</td>
+                              <td>
+                                  &nbsp;</td>
+                              <td colspan="2">
+                                  <asp:Label ID="Label_Especialidad" runat="server" Text="Selecciona tu Especialidad :" Visible="False"></asp:Label>
+                                  </td>
+                              <td colspan="5">
+                                  <asp:DropDownList ID="DDL_Especialidad" runat="server" Width="180px" Visible="False">
+                                      <asp:ListItem Value="0">Seleccione</asp:ListItem>
+                                      <asp:ListItem Value="1">Jardineria</asp:ListItem>
+                                      <asp:ListItem Value="2">Electricista </asp:ListItem>
+                                      <asp:ListItem Value="3">Manposteria</asp:ListItem>
+                                      <asp:ListItem Value="4">Limpieza</asp:ListItem>
+                                      <asp:ListItem Value="5">Plomero</asp:ListItem>
+                                      <asp:ListItem Value="6">Cerrajeria</asp:ListItem>
+                                      <asp:ListItem Value="7">Otro</asp:ListItem>
+                                  </asp:DropDownList>
+                              </td>
                               <td class="auto-style16">
                                   &nbsp;</td>
                           </tr>
@@ -400,14 +431,30 @@
                                   &nbsp;</td>
                           </tr>
                           <tr>
+                              <td class="auto-style15">
+                                  &nbsp;</td>
+                              <td class="auto-style24">
+                                  &nbsp;</td>
+                              <td colspan="3">
+                                  &nbsp;</td>
+                              <td colspan="4">
+                                  &nbsp;</td>
+                              <td>
+                                  &nbsp;</td>
+                              <td class="auto-style16">
+                                  &nbsp;</td>
+                          </tr>
+                          <tr>
                               <td class="auto-style15">&nbsp;</td>
                               <td class="auto-style24">&nbsp;</td>
                               <td colspan="4">
                                   &nbsp;</td>
                               <td colspan="2">
-                                  &nbsp;</td>
+                                  <asp:Label ID="Label_CV" runat="server" Text="C.V :" Visible="False"></asp:Label>
+                              </td>
                               <td colspan="2">
-                                               <asp:RangeValidator ID="RV_NIT" runat="server" ControlToValidate="TB_Nit" ErrorMessage="Menos de 10 numeros !!" ForeColor="#3366CC" MaximumValue="999999999" MinimumValue="1000" ValidationGroup="v1"></asp:RangeValidator>
+                                                          <asp:TextBox ID="TB_CV" runat="server" Visible="False" Width="22px"></asp:TextBox>
+                                               <asp:RequiredFieldValidator ID="RF_CV" runat="server" ControlToValidate="TB_CV" ErrorMessage="Campo Requerido" ForeColor="#3366CC" ValidationGroup="v1"></asp:RequiredFieldValidator>
                               </td>
                               <td class="auto-style16">
                                   &nbsp;</td>
@@ -474,16 +521,6 @@
 
   </section>
 
-    
-
-  
-    
-
-    
-    
-
-  
-    
 
    <%-- </form>--%>
 
@@ -527,11 +564,12 @@
     </div>
   </footer>
   <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>--%>&nbsp;<!-- Required JavaScript Libraries --><script src="lib/jquery/jquery.min.js"></script><script src="lib/jquery/jquery-migrate.min.js"></script><script src="lib/superfish/hoverIntent.js"></script><script src="lib/superfish/superfish.min.js"></script><script src="lib/tether/js/tether.min.js"></script><script src="lib/stellar/stellar.min.js"></script><script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script><script src="lib/counterup/counterup.min.js"></script><script src="lib/waypoints/waypoints.min.js"></script><script src="lib/easing/easing.js"></script><script src="lib/stickyjs/sticky.js"></script><script src="lib/parallax/parallax.js"></script><script src="lib/lockfixed/lockfixed.min.js"></script><!-- Template Specisifc Custom Javascript File --><script src="js/custom.js"></script><script src="contactform/contactform.js"></script>
-            <%--<asp:Button ID="BT_Inico" runat="server" Text="Inico" />--%>      
-         <asp:Button ID="BT_Inico" HorizontalAlign="Center"  class="btn btn-full" runat="server" OnClick="BT_Inico_Click1" Text="Inicio" Height="57px" Width="183px" />
-    </form>
+           
+               
+        <asp:Button ID="BT_Inico" HorizontalAlign="Center"  class="btn btn-full" runat="server" OnClick="BT_Inico_Click1" Text="Inicio" Height="57px" Width="183px" />
+              </form>
 
-            
+          
 
 
 </body>

@@ -192,18 +192,21 @@
                 <td class="auto-style7">
                     &nbsp;</td>
                 <td class="auto-style7">
-                    <asp:Label ID="Label_Valor" runat="server" Text="Valor : "></asp:Label>
+                    <i class="fa fa-money fa-2x" aria-hidden="true" style="margin-left: 6px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label_Valor" runat="server" Text="Valor : "></asp:Label>
                     <asp:Label ID="L_Valor" runat="server"></asp:Label>
                 </td>
                 <td class="auto-style7">
+                    <asp:Image ID="Imag_moneda" runat="server" ImageUrl="~/img/1.bmp" />
                     <asp:Label ID="Label_Moneda" runat="server" Text="Moneda :"></asp:Label>
                     <asp:Label ID="L_moneda" runat="server"></asp:Label>
                 </td>
                 <td class="auto-style14" colspan="7">
+                    <asp:Image ID="Img_Mts" runat="server" ImageUrl="~/img/2.bmp" />
                     <asp:Label ID="Label_Mts2" runat="server" Text="Mts2 :"></asp:Label>
                     <asp:Label ID="L_Mts2" runat="server"></asp:Label>
                 </td>
                 <td class="auto-style7" colspan="3">
+                    <asp:Image ID="Img_habitaciones" runat="server" ImageUrl="~/img/3.bmp" />
                     <asp:Label ID="Label_Habitaciones" runat="server" Text="Habitaciones :"></asp:Label>
                     <asp:Label ID="L_habitaciones" runat="server"></asp:Label>
                 </td>
@@ -264,25 +267,29 @@
                     <asp:CheckBox ID="CB_Garaje" runat="server" Enabled="False" />
                     </td>
                 <td>
-                    <i class="fa fa-car " aria-hidden="true" style="width: 6px; margin-left: 7px"></i>
+                    <i class="fa fa-car " aria-hidden="true" style="width: 6px; margin-left: 7px"></i>   
+                      &nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label_Garaje" runat="server" Text="Garaje"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_SalaJuego" runat="server" Enabled="False" />
                     </td>
                 <td>
                     <i class="fa fa-gamepad " aria-hidden="true" style="width: 1px; height: 19px; margin-left: 4px"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label_Saladejuegos" runat="server" Text="Sala de juegos"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Caldera" runat="server" Enabled="False" />
                     </td>
                 <td colspan="2">
                      <i class="fa fa-fire " aria-hidden="true" style="width: 6px; margin-left: 5px; margin-right: 0px"></i>
+                     &nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label_caldera" runat="server" Text="Caldera"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_ZonaBBQ" runat="server" Enabled="False" />
                     </td>
                 <td>
                     <i class="fa fa-cutlery " aria-hidden="true" style="width: 6px; margin-left: 8px"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label_ZonaBBQ" runat="server" Text="Zona BBQ"></asp:Label>
                     </td>
                 <td>
                     &nbsp;</td>
@@ -296,17 +303,20 @@
                     </td>
                 <td>
                     <i class="fa fa-fire-extinguisher " aria-hidden="true" style="margin-left: 12px"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label_RedIncendio" runat="server" Text="Red Incendio"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_SalaEstar" runat="server" Enabled="False" />
                     </td>
                 <td>
+                    <asp:Image ID="img_SalaEstar" runat="server"  ImageUrl="~/img/A.bmp" />
                     <asp:Label ID="Label_SalaEstar" runat="server" Text="Sala Estar"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Electrogeno" runat="server" Enabled="False" />
                     </td>
                 <td colspan="2">
+                    <asp:Image ID="img_electrogeno" runat="server" ImageUrl="~/img/B.bmp" />
                     <asp:Label ID="Label_Electrogeno" runat="server" Text="Electrogeno"></asp:Label>
                     </td>
                 <td>
@@ -314,6 +324,7 @@
                     </td>
                 <td>
                     <i class="fa fa-video-camera " aria-hidden="true" style="margin-left: 12px"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label_Cine" runat="server" Text="Cine"></asp:Label>
                     </td>
                 <td>
                     &nbsp;</td>
@@ -326,24 +337,28 @@
                     <asp:CheckBox ID="CB_Piscina" runat="server" Enabled="False" />
                     </td>
                 <td>
+                    <asp:Image ID="Img_piscina" runat="server" ImageUrl="~/img/C.bmp" />
                     <asp:Label ID="Label_Piscina" runat="server" Text="Piscina"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Hipoteca" runat="server" Enabled="False" />
                     </td>
                 <td>
+                    <asp:Image ID="Imh_Hipoteca" runat="server" ImageUrl="~/img/D.bmp" />
                     <asp:Label ID="Label_Hipoteca" runat="server" Text="Hipoteca"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Sauna" runat="server" Enabled="False" />
                     </td>
                 <td colspan="2">
+                    <asp:Image ID="Img_Sauna" runat="server" ImageUrl="~/img/E.bmp" />
                     <asp:Label ID="Label_Sauna" runat="server" Text="Sauna"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_SalonEventos" runat="server" Enabled="False" />
                     </td>
                 <td>
+                    <asp:Image ID="img_salonEventos" runat="server" ImageUrl="~/img/F.bmp" />
                     <asp:Label ID="Label_SalonEventos" runat="server" Text="Salon Eventos"></asp:Label>
                     </td>
                 <td>
@@ -357,24 +372,28 @@
                     <asp:CheckBox ID="CB_SalonMultiuso" runat="server" Enabled="False" />
                     </td>
                 <td>
+                    <asp:Image ID="Img_SalonMultiuso" runat="server" ImageUrl="~/img/G.bmp" />
                     <asp:Label ID="Label_SalonMiltiuso" runat="server" Text="Salon Miltiuso"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Escaleras" runat="server" Enabled="False" />
                     </td>
                 <td>
+                    <asp:Image ID="Img_escaleras" runat="server" ImageUrl="~/img/H.bmp" />
                     <asp:Label ID="Label_Escaleras" runat="server" Text="Escaleras"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Portones" runat="server" Enabled="False" />
                     </td>
                 <td colspan="2">
+                    <asp:Image ID="Img_portones" runat="server" ImageUrl="~/img/I.bmp" />
                     <asp:Label ID="Label_Portones" runat="server" Text="Portones :"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Guardia" runat="server" Enabled="False" />
                     </td>
                 <td>
+                    <asp:Image ID="Img_guardia" runat="server" ImageUrl="~/img/J.bmp" />
                     <asp:Label ID="Label_Guardia" runat="server" Text="Guardia"></asp:Label>
                     </td>
                 <td>
@@ -388,24 +407,28 @@
                     <asp:CheckBox ID="CB_Hall" runat="server" Enabled="False" />
                     </td>
                 <td>
+                    <asp:Image ID="Img_Hall" runat="server" ImageUrl="~/img/K.bmp" />
                     <asp:Label ID="Label_Hall" runat="server" Text="Hall"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Tenis" runat="server" Enabled="False" />
                     </td>
                 <td>
+                    <asp:Image ID="Img_Tenis" runat="server" ImageUrl="~/img/L.bmp" />
                     <asp:Label ID="Tenis" runat="server" Text="Tenis"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Squash" runat="server" Enabled="False" />
                     </td>
                 <td colspan="2">
+                    <asp:Image ID="Img_Squas" runat="server" ImageUrl="~/img/M.bmp" />
                     <asp:Label ID="LabelSquash" runat="server" Text="Squash"></asp:Label>
                     </td>
                 <td>
                     <asp:CheckBox ID="CB_Gym" runat="server" Enabled="False" />
                     </td>
                 <td>
+                    <asp:Image ID="Img_gym" runat="server" ImageUrl="~/img/N.bmp" />
                     <asp:Label ID="Label_Gym" runat="server" Text="CB_Gym"></asp:Label>
                     </td>
                                 
@@ -427,24 +450,28 @@
                     <asp:CheckBox ID="CB_Jardines" runat="server" Enabled="False" />
                         </td>
                 <td>
+                    <asp:Image ID="Img_jardines" runat="server" ImageUrl="~/img/O.bmp" />
                     <asp:Label ID="Label_Jardines" runat="server" Text="Jardines"></asp:Label>
                         </td>
                 <td>
                     <asp:CheckBox ID="CB_Ascensor" runat="server" Enabled="False" />
                         </td>
                 <td>
+                    <asp:Image ID="Img_ascensor" runat="server" ImageUrl="~/img/P.bmp" />
                     <asp:Label ID="Lable_Ascensor" runat="server" Text="Ascensor"></asp:Label>
                         </td>
                 <td>
                     <asp:CheckBox ID="CB_Bodega" runat="server" Enabled="False" />
                         </td>
                 <td colspan="2">
+                    <asp:Image ID="Img_bodega" runat="server" ImageUrl="~/img/Q.bmp" />
                     <asp:Label ID="Label_Bodega" runat="server" Text="Bodega"></asp:Label>
                         </td>
                 <td>
                     <asp:CheckBox ID="CB_Golf" runat="server" Enabled="False" />
                         </td>
                 <td>
+                    <asp:Image ID="Img_golf" runat="server" ImageUrl="~/img/R.bmp" />
                     <asp:Label ID="Label_Golf" runat="server" Text="Golf"></asp:Label>
                         </td>
                                 

@@ -27,17 +27,18 @@ namespace Lerentals
         }
              protected void ASPxButton1_Click1(object sender, EventArgs e)
         {
-            if (tipo_actividad.SelectedIndex > 0 && tipo_inmueble.SelectedIndex > 0)
+            if (tipo_actividad.SelectedIndex > 0 && tipo_inmueble.SelectedIndex > 0 && proyecto_pais.SelectedIndex > 0 )
             {
                 Session["tipo_inmueble"] = this.tipo_inmueble.SelectedItem.Text;
                 Session["tipo_actividad"] = this.tipo_actividad.SelectedItem.Text;
                 Session["proyecto_cuidad"] = this.proyecto_cuidad.SelectedItem.Text;
+                Session["proyecto_pais"] = this.proyecto_pais.SelectedItem.Text;
                 Response.Redirect("Default.aspx");
             }
             else
             {
 
-                string script = "alert('Seleccione un Valor...');";
+                string script = "alert('Seleccione una Opcion...');";
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
                 return;
 
