@@ -49,22 +49,22 @@ namespace Lerentals {
         protected global::System.Web.UI.WebControls.DropDownList tipo_actividad;
         
         /// <summary>
-        /// proyecto_pais control.
+        /// DDL_Pais control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList proyecto_pais;
+        protected global::System.Web.UI.WebControls.DropDownList DDL_Pais;
         
         /// <summary>
-        /// proyecto_cuidad control.
+        /// DDL_CIUDAD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList proyecto_cuidad;
+        protected global::System.Web.UI.WebControls.DropDownList DDL_CIUDAD;
         
         /// <summary>
         /// SqlDataSource1 control.

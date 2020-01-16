@@ -96,7 +96,7 @@
                         </asp:DropDownList>
                     </td>
                     <td colspan="2">
-                        <asp:DropDownList ID="tipo_actividad" runat="server">
+                        <asp:DropDownList ID="tipo_actividad" runat="server" Width="200px">
                              <asp:ListItem Selected="True" Value="0">En Venta o Alquiler?</asp:ListItem>
                           <asp:ListItem Value="1">Venta</asp:ListItem>
                           <asp:ListItem Value="2">Alquiler</asp:ListItem>
@@ -104,15 +104,15 @@
                         </asp:DropDownList>
                     </td>
                     <td colspan="2">
-                        <asp:DropDownList ID="proyecto_pais" runat="server" Width="200px">
-                            <asp:ListItem Value="0">Pais ?</asp:ListItem>
+                        <asp:DropDownList ID="DDL_Pais" runat="server" Width="200px" AutoPostBack="True" OnSelectedIndexChanged="Paiseleccionado">
+                            <asp:ListItem Value="0">Pais?</asp:ListItem>
                             <asp:ListItem Value="1">Colombia</asp:ListItem>
-                            <asp:ListItem Value="2">Venezuela</asp:ListItem>
-                            <asp:ListItem>Peru</asp:ListItem>
+                            <asp:ListItem Value="2">Chile</asp:ListItem>
+                            <asp:ListItem Value="3">Peru</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                     <td>
-                        <asp:DropDownList ID="proyecto_cuidad" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="proyecto_cuidad" DataValueField="proyecto_cuidad" Width="200px">
+                        <asp:DropDownList ID="DDL_CIUDAD" runat="server" OnSelectedIndexChanged="Paiseleccionado" Width="200px">
                         </asp:DropDownList>
                     </td>
                     <td>&nbsp;</td>
@@ -159,7 +159,7 @@
         <%--<asp:ListItem Value="6">Casa Lote</asp:ListItem>--%>
       <!-- #nav-menu-container -->
 
-        <%--<a class="btn btn-full" href="#about" id="ASPxButton1">Buscar</a>--%>
+        <%--<asp:ListItem Value="6">Casa Lote</asp:ListItem>--%>
     </div>
   </header>
   <!-- #header -->
@@ -170,13 +170,21 @@
   <!-- /About -->
   <!-- Parallax -->
 
-        <%--<asp:ListItem Value="6">Casa Lote</asp:ListItem>--%>
+        <%--<a class="btn btn-full" href="#about" id="ASPxButton1">Buscar</a>--%>
   <!-- /Parallax -->
   <!-- Features -->
 
         <%--<asp:ListItem Value="6">Casa Lote</asp:ListItem>--%>
   <!-- /Features -->
   <!-- Call to Action -->
+
+        <%--<asp:ListItem Value="6">Casa Lote</asp:ListItem>--%>
+  <!-- /Call to Action -->
+  <!-- Portfolio -->
+
+        <%--<asp:ListItem Value="6">Casa Lote</asp:ListItem>--%>
+  <!-- /Portfolio -->
+  <!-- Team -->
 
         <%--<header id="header">
     <div class="container">
@@ -213,53 +221,6 @@
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>--%>
-  <!-- /Call to Action -->
-  <!-- Portfolio -->
-
-        <%--<nav class="nav social-nav pull-right d-none d-lg-inline">
-        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-      </nav>--%>
-  <!-- /Portfolio -->
-  <!-- Team -->
-
-        <%--<section class="about" id="about">
-    <div class="container text-center">
-      <h2>
-          About Bell Theme
-        </h2>
-
-      <p>
-        Voluptua scripserit per ad, laudem viderer sit ex. Ex alia corrumpit voluptatibus usu, sed unum convenire id. Ut cum nisl moderatius, per nihil dicant commodo an. Eum tacimates erroribus ad. Atqui feugiat euripidis ea pri, sed veniam tacimates ex. Menandri
-        temporibus an duo.
-      </p>
-
-      <div class="row stats-row">
-        <div class="stats-col text-center col-md-3 col-sm-6">
-          <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">232</span> Satisfied Customers
-          </div>
-        </div>
-
-        <div class="stats-col text-center col-md-3 col-sm-6">
-          <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">79</span> Released Projects
-          </div>
-        </div>
-
-        <div class="stats-col text-center col-md-3 col-sm-6">
-          <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">1,463</span> Hours Of Support
-          </div>
-        </div>
-
-        <div class="stats-col text-center col-md-3 col-sm-6">
-          <div class="circle">
-            <span class="stats-no" data-toggle="counter-up">15</span> Hard Workers
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>--%>
   <!-- /Team -->
   <!-- @component: footer -->
 

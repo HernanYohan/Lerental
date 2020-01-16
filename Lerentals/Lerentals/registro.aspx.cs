@@ -250,7 +250,7 @@ namespace Lerentals
                 SqlConnection conexion = BdComun.ObtenerConexion();
                 SqlCommand consulta = new SqlCommand(string.Format("insert into tbl_usuarios(user_login,user_pass,user_stat,perfil_id,user_name,nit_empr,user_sexo,user_mail,perfil,especialidad,CV)values('" + usuario+"',"+clave+",'"+estado+"',"+rol+",'"+nombre+"',"+nit+",'"+sexo+"','"+correo+"','"+perfil+ "','" + especialidad + "','" + cvUsu + "')"), conexion);
                 consulta.ExecuteNonQuery();
-                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('Regitrado correctamente');window.location=\"index.aspx\"</script>");   
+                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('Regitrado correctamente, en breve te llegara un correo para la activacion de tu cuenta');window.location=\"index.aspx\"</script>");   
             }
             catch(Exception ex) {
                 cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('No se pudo registrar');</script>");
@@ -271,7 +271,7 @@ namespace Lerentals
                 consulta.ExecuteNonQuery();
                 SqlCommand consultaEmpresa = new SqlCommand(string.Format("insert into tbl_empresas(nit_empr,empr_name,empr_stat,empr_cv)values(" + nit + ",'"+nombreEmpresa+"','"+estado+ "','" + cvEmpresa + "')"), conexion);
                 consultaEmpresa.ExecuteNonQuery();
-                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('Regitrado correctamente');window.location=\"index.aspx\"</script>");
+                cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('Regitrado correctamente, en breve te llegara un correo para la activacion de tu cuenta');window.location=\"index.aspx\"</script>");
             }
             catch (Exception ex)
             {
@@ -479,10 +479,10 @@ namespace Lerentals
             
             string msg = string.Empty;
             string subject = "Activacion de creacion de cuenta IeRental";
-            string body = "Hola " + nombre + ", nos permitimos informarte que se ha creado tu cuenta en IeRental, las credenciales para acceder a la aplicacion son, <br /> "
+            string body = "Hola " + nombre + ", nos permitimos informarte que se ha creado tu cuenta en IeRental, las credenciales para acceder a la aplicacion son: <br /> "
                + " Usuario: " + usuario
                + "<br />Contraseña : " + contra
-               + "<br />Para acceder a nuestro aplicacion ingresa al siguiente link  ierental.gearhostpreview.com  "
+               + "<br />Para acceder a nuestra aplicacion ingresa al siguiente link http://ierentalpriv.gearhostpreview.com/account/login.aspx  "
                + "<br />Atentamente Grupo IeRental  "
                + "<br />Si tienes algun problema te puedes comunicar al siquiente correo soporteierental@gmail.com ";
             string ccList = "hernanyohh@hotmail.com";
@@ -526,10 +526,10 @@ namespace Lerentals
 
             string msg = string.Empty;
             string subject = "Activacion de creacion de cuenta IeRental";
-            string body = "Hola " + nombre + ", nos permitimos informarte que se ha creado tu cuenta en IeRental, las credenciales para acceder a la aplicacion son, <br /> "
+            string body = "Hola " + nombre + ", nos permitimos informarte que se ha creado tu cuenta en IeRental, las credenciales para acceder a la aplicacion son: <br /> "
                + " Usuario: " + usuario
                + "<br />Contraseña : " + claveEmpresa
-               + "<br />Para acceder a nuestro aplicacion ingresa al siguiente link  ierental.gearhostpreview.com  "
+               + "<br />Para acceder a nuestra aplicacion ingresa al siguiente link  http://ierentalpriv.gearhostpreview.com/account/login.aspx "
                + "<br />Atentamente Grupo IeRental  "
                + "<br />Si tienes algun problema te puedes comunicar al siquiente correo soporteierental@gmail.com ";
             string ccList = "hernanyohh@hotmail.com";
